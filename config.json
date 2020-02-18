@@ -1,0 +1,108 @@
+{
+    "extends": "eslint:recommended",
+    "env": {
+        "es2020": true,
+        "node": true,
+        "browser": true
+    },
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+        "curly": [
+            "error",
+            "all"
+        ],
+        "eqeqeq": [
+            "error",
+            "always"
+        ],
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "wrap-iife": [
+            "error",
+            "inside"
+        ],
+        "brace-style": [
+            "error",
+            "1tbs"
+        ],
+        "func-style": [
+            "error",
+            "expression"
+        ],
+        "space-in-parens": [
+            "error",
+            "never"
+        ],
+        "space-before-function-paren": [
+            "error",
+            {
+                "asyncArrow": "always",
+                "anonymous": "never",
+                "named": "never"
+            }
+        ],
+        "array-bracket-spacing": [
+            "error",
+            "always",
+            {
+                "objectsInArrays": false,
+                "arraysInArrays": false
+            }
+        ],
+        "array-bracket-newline": [
+            "error",
+            {
+                "multiline": true
+            }
+        ],
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "arrow-parens": [
+            "error",
+            "as-needed"
+        ],
+        "spaced-comment": [
+            "error",
+            "always"
+        ],
+        "one-var": [
+            "error",
+            "never"
+        ],
+        "no-var": "error",
+        "no-multi-spaces": "error",
+        "no-multi-assign": "error",
+        "no-use-before-define": "error",
+        "no-unneeded-ternary": "error",
+        "no-duplicate-imports": "error",
+        "no-invalid-this": "error",
+        "no-multi-str": "error",
+        "vars-on-top": "error",
+        "prefer-const": "error",
+        "require-await": "error",
+        "arrow-spacing": "error",
+        "comma-spacing": "error",
+        "comma-style": "error",
+        "key-spacing": "error",
+        "keyword-spacing": "error",
+        "semi-spacing": "error",
+        "global-require": "error",
+        "func-call-spacing": "error",
+        "camelcase": "error",
+        "new-cap": "error"
+    }
+}
