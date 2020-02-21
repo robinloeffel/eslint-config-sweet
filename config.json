@@ -123,6 +123,7 @@
             "error",
             "never"
         ],
+        "space-infix-ops": "error",
         "semi": [
             "error",
             "always"

@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-sweet",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "ESLint config for the most good-lookingest JavaScript",
     "main": "index.js",
     "repository": "robinloeffel/eslint-config-sweet",
