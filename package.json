@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-sweet",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "description": "ESLint config for the most good-lookingest JavaScript",
     "main": "index.js",
     "repository": "robinloeffel/eslint-config-sweet",
@@ -14,6 +14,13 @@
         "index.js"
     ],
     "license": "MIT",
+    "scripts": {
+        "test": "onchange -i test.js -- eslint -c index.js test.js"
+    },
+    "devDependencies": {
+        "eslint": "^6.8.0",
+        "onchange": "^6.1.0"
+    },
     "peerDependencies": {
         "eslint": "^6.8.0"
     }
