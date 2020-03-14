@@ -8,6 +8,10 @@
     "parserOptions": {
         "sourceType": "module"
     },
+    "plugins": [
+        "import",
+        "unicorn"
+    ],
     "rules": {
         "array-bracket-newline": [
             "error",
@@ -65,6 +69,30 @@
             "expression"
         ],
         "global-require": "error",
+        "import/export": "error",
+        "import/exports-last": "error",
+        "import/extensions": [
+            "error",
+            "never"
+        ],
+        "import/first": "error",
+        "import/newline-after-import": "error",
+        "import/no-absolute-path": "error",
+        "import/no-extraneous-dependencies": "error",
+        "import/no-mutable-exports": "error",
+        "import/no-unresolved": [
+            "error",
+            {
+                "commonjs": true
+            }
+        ],
+        "import/no-useless-path-segments": [
+            "error",
+            {
+                "noUselessIndex": true,
+                "commonjs": true
+            }
+        ],
         "key-spacing": "error",
         "keyword-spacing": "error",
         "new-cap": "error",
@@ -130,6 +158,27 @@
             "always"
         ],
         "semi-spacing": "error",
+        "unicorn/better-regex": "error",
+        "unicorn/catch-error-name": "error",
+        "unicorn/consistent-function-scoping": "error",
+        "unicorn/error-message": "error",
+        "unicorn/filename-case": "error",
+        "unicorn/no-abusive-eslint-disable": "error",
+        "unicorn/no-array-instanceof": "error",
+        "unicorn/no-for-loop": "error",
+        "unicorn/no-unused-properties": "error",
+        "unicorn/no-zero-fractions": "error",
+        "unicorn/prefer-add-event-listener": "error",
+        "unicorn/prefer-dataset": "error",
+        "unicorn/prefer-includes": "error",
+        "unicorn/prefer-modern-dom-apis": "error",
+        "unicorn/prefer-negative-index": "error",
+        "unicorn/prefer-query-selector": "error",
+        "unicorn/prefer-starts-ends-with": "error",
+        "unicorn/prefer-text-content": "error",
+        "unicorn/prefer-trim-start-end": "error",
+        "unicorn/prevent-abbreviations": "error",
+        "unicorn/throw-new-error": "error",
         "vars-on-top": "error",
         "wrap-iife": [
             "error",
