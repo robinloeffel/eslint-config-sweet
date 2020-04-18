@@ -13,9 +13,13 @@ let arr= [ 1, 2, 3, 4,].map(async(number )=>{
 
     console.log( 1, 2 ,
         4);
+
+    let el = {
+        'ah': parseInt('3')
+    }
 });
 
-function y(lol) {
+function y(lol = 'eh', a) {
     alert('hey')
     throw Error();
 

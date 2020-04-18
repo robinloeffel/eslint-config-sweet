@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-sweet",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "description": "ESLint config for the most sweet-ass JavaScript. 🤙🏼",
     "main": "index.js",
     "repository": "robinloeffel/eslint-config-sweet",
@@ -18,8 +18,8 @@
         "start": "onchange -i test.js -- eslint -c index.js test.js"
     },
     "dependencies": {
-        "eslint-plugin-import": "^2.20.1",
-        "eslint-plugin-unicorn": "^17.2.0"
+        "eslint-plugin-import": "^2.20.2",
+        "eslint-plugin-unicorn": "^18.0.1"
     },
     "devDependencies": {
         "eslint": "^6.8.0",
