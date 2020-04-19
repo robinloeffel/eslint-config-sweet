@@ -26,10 +26,7 @@
             }
         ],
         "array-callback-return": "error",
-        "arrow-body-style": [
-            "error",
-            "as-needed"
-        ],
+        "arrow-body-style": "error",
         "arrow-parens": [
             "error",
             "as-needed"
@@ -100,6 +97,10 @@
                 "commonjs": true
             }
         ],
+        "init-declarations": [
+            "error",
+            "always"
+        ],
         "key-spacing": "error",
         "keyword-spacing": "error",
         "new-cap": "error",
@@ -127,11 +128,14 @@
         "no-script-url": "error",
         "no-shadow": "error",
         "no-spaced-func": "error",
+        "no-undefined": "error",
+        "no-undef-init": "error",
         "no-unneeded-ternary": "error",
         "no-unused-expressions": "error",
         "no-useless-concat": "error",
         "no-use-before-define": "error",
         "no-var": "error",
+        "no-void": "error",
         "no-whitespace-before-property": "error",
         "object-curly-newline": [
             "error",
@@ -195,7 +199,6 @@
         "unicorn/no-array-instanceof": "error",
         "unicorn/no-for-loop": "error",
         "unicorn/no-new-buffer": "error",
-        "unicorn/no-null": "error",
         "unicorn/no-unsafe-regex": "error",
         "unicorn/no-unused-properties": "error",
         "unicorn/no-zero-fractions": "error",

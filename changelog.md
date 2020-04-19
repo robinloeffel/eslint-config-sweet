@@ -1,3 +1,23 @@
+# `0.4.1`
+_April 19, 2020_
+
+## Introduced rules
+* `no-undefined`
+* `no-undef-init`
+* `no-void`
+
+## Changed rules
+* none
+
+## Deleted rules
+* `unicorn/no-null`
+
+## Updated dependencies
+* none
+
+
+-----
+
 # `0.4.0`
 _April 18, 2020_
 
@@ -36,7 +56,7 @@ _April 18, 2020_
 ## Changed rules
 * `no-console` from `warn` to `error`
 
-## Deprecated rules
+## Deleted rules
 * none
 
 ## Updated dependencies

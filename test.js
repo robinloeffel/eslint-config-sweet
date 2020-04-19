@@ -15,7 +15,10 @@ let arr= [ 1, 2, 3, 4,].map(async(number )=>{
         4);
 
     let el = {
-        'ah': parseInt('3')
+        'ah': parseInt('3'),
+        uh: ()=> {
+            return 'uh'
+        }
     }
 });
 
