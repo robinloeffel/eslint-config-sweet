@@ -16,8 +16,8 @@ As soon as you've installed the config, you can extend from it. To do that, find
 
 ```js
 {
-	extends: [ 'sweet' ]
-	// things like plugins you want to add
+  extends: [ 'sweet' ]
+  // things like plugins you want to add
 }
 ```
 
