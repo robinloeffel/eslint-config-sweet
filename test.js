@@ -1,9 +1,11 @@
+
 const path = require('/path/pateh')
 import json from './index.js'
 
 import a from '.'
 let arr= [ 1, 2, 3, 4,].map(async(number )=>{
     var string =  "string"
+
 
 
     console.
