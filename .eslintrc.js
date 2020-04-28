@@ -208,6 +208,7 @@ module.exports = {
     'unicorn/no-array-instanceof': 'error',
     'unicorn/no-for-loop': 'error',
     'unicorn/no-new-buffer': 'error',
+    'unicorn/no-null': 'error',
     'unicorn/no-unsafe-regex': 'error',
     'unicorn/no-unused-properties': 'error',
     'unicorn/no-zero-fractions': 'error',
