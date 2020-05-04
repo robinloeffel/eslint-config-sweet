@@ -1,6 +1,6 @@
 # eslint-config-sweet
 
-[![package license](https://img.shields.io/npm/l/eslint-config-sweet)](license) [![version on npm](https://img.shields.io/npm/v/eslint-config-sweet)](https://www.npmjs.com/package/eslint-config-sweet) [![npm peer dependency](https://img.shields.io/npm/dependency-version/eslint-config-sweet/peer/eslint?label=eslint%20peer%20dep)](https://github.com/eslint/eslint)
+[![package license](https://img.shields.io/npm/l/eslint-config-sweet)](license) [![version on npm](https://img.shields.io/npm/v/eslint-config-sweet)](https://www.npmjs.com/package/eslint-config-sweet) [![required node version](https://img.shields.io/node/v/eslint-config-sweet)](https://github.com/nodejs/Release) [![npm peer dependency](https://img.shields.io/npm/dependency-version/eslint-config-sweet/peer/eslint?label=eslint%20peer%20dep)](https://github.com/eslint/eslint)
 
 > ESLint [shareable config](https://eslint.org/docs/developer-guide/shareable-configs.html) for the most sweet-ass JavaScript. 🤙🏼
 
@@ -35,7 +35,7 @@ If you extend from this config, it will set the environments to `node`, `browser
 
 ## Plugins in use
 
-To make this config more well-rounded, it uses two additional plugins: [`eslint-plugin-import`](https://github.com/benmosher/eslint-plugin-import) and [`eslint-plugin-unicorn`](https://github.com/sindresorhus/eslint-plugin-unicorn).
+To make this config more well-rounded, it uses three additional plugins: [`eslint-plugin-import`](https://github.com/benmosher/eslint-plugin-import), [`eslint-plugin-unicorn`](https://github.com/sindresorhus/eslint-plugin-unicorn) and [`eslint-plugin-node`](https://github.com/mysticatea/eslint-plugin-node).
 
 ## License
 

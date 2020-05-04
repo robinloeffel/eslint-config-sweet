@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sweet",
-  "version": "0.4.3",
+  "version": "0.5.0",
   "description": "ESLint config for the most sweet-ass JavaScript. 🤙🏼",
   "main": ".eslintrc.js",
   "repository": "robinloeffel/eslint-config-sweet",
@@ -12,17 +12,21 @@
   "files": [
     ".eslintrc.js"
   ],
+  "engines": {
+    "node": ">=10"
+  },
   "license": "MIT",
   "scripts": {
     "start": "onchange -i test.js -- eslint test.js"
   },
   "dependencies": {
     "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-unicorn": "^19.0.1"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
-    "onchange": "^7.0.1"
+    "onchange": "^7.0.2"
   },
   "peerDependencies": {
     "eslint": "^6.8.0"

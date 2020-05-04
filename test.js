@@ -32,3 +32,6 @@ function y(lol = 'eh', a) {
 }
 
 y();
+
+const fs = require('fs');
+fs.exists('mypath');

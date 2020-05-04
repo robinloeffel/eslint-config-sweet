@@ -10,7 +10,8 @@ module.exports = {
   },
   plugins: [
     'import',
-    'unicorn'
+    'unicorn',
+    'node'
   ],
   rules: {
     'array-bracket-newline': [
@@ -71,7 +72,6 @@ module.exports = {
       'error',
       'expression'
     ],
-    'global-require': 'error',
     'import/export': 'error',
     'import/exports-last': 'error',
     'import/extensions': [
@@ -106,6 +106,17 @@ module.exports = {
     'keyword-spacing': 'error',
     'new-cap': 'error',
     'new-parens': 'error',
+    'node/exports-style': [
+      'error',
+      'module.exports'
+    ],
+    'node/global-require': 'error',
+    'node/no-deprecated-api': 'error',
+    'node/no-new-require': 'error',
+    'node/no-path-concat': 'error',
+    'node/no-unsupported-features/es-builtins': 'error',
+    'node/no-unsupported-features/es-syntax': 'error',
+    'node/no-unsupported-features/node-builtins': 'error',
     'no-console': 'error',
     'no-duplicate-imports': 'error',
     'no-empty-function': 'error',
@@ -133,11 +144,9 @@ module.exports = {
     'no-nested-ternary': 'error',
     'no-new-func': 'error',
     'no-param-reassign': 'error',
-    'no-path-concat': 'error',
     'no-script-url': 'error',
     'no-shadow': 'error',
     'no-spaced-func': 'error',
-    'no-undefined': 'error',
     'no-undef-init': 'error',
     'no-unneeded-ternary': 'error',
     'no-unused-expressions': 'error',
