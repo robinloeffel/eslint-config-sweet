@@ -1,5 +1,4 @@
 
-const path = require('/path/pateh')
 import json from './index.js'
 
 import a from '.'
@@ -32,6 +31,3 @@ function y(lol = 'eh', a) {
 }
 
 y();
-
-const fs = require('fs');
-fs.exists('mypath');

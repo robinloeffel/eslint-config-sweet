@@ -1,8 +1,8 @@
 {
   "name": "eslint-config-sweet",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "ESLint config for the most sweet-ass JavaScript. 🤙🏼",
-  "main": ".eslintrc.js",
+  "main": "index.js",
   "repository": "robinloeffel/eslint-config-sweet",
   "author": {
     "name": "Robin Löffel",
@@ -10,16 +10,20 @@
     "url": "robinloeffel.ch"
   },
   "files": [
-    ".eslintrc.js"
+    "index.js",
+    "web.js",
+    "node.js"
   ],
   "engines": {
     "node": ">=10"
   },
   "license": "MIT",
   "scripts": {
-    "start": "onchange -i test.js -- eslint test.js"
+    "start:web": "onchange -i test/web.js -- eslint -c web.js test/web.js",
+    "start:node": "onchange -i test/node.js -- eslint -c node.js test/node.js"
   },
   "dependencies": {
+    "eslint-plugin-compat": "^3.5.1",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-unicorn": "^19.0.1"

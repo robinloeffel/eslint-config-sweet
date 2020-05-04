@@ -2,16 +2,15 @@ module.exports = {
   extends: 'eslint:recommended',
   env: {
     es2020: true,
-    node: true,
-    browser: true
+    browser: true,
+    node: true
   },
   parserOptions: {
     sourceType: 'module'
   },
   plugins: [
     'import',
-    'unicorn',
-    'node'
+    'unicorn'
   ],
   rules: {
     'array-bracket-newline': [
@@ -83,21 +82,8 @@ module.exports = {
     'import/no-absolute-path': 'error',
     'import/no-duplicates': 'error',
     'import/no-dynamic-require': 'error',
-    'import/no-extraneous-dependencies': 'error',
     'import/no-mutable-exports': 'error',
-    'import/no-unresolved': [
-      'error',
-      {
-        commonjs: true
-      }
-    ],
-    'import/no-useless-path-segments': [
-      'error',
-      {
-        noUselessIndex: true,
-        commonjs: true
-      }
-    ],
+    'import/no-unresolved': 'error',
     'init-declarations': [
       'error',
       'always'
@@ -106,27 +92,12 @@ module.exports = {
     'keyword-spacing': 'error',
     'new-cap': 'error',
     'new-parens': 'error',
-    'node/exports-style': [
-      'error',
-      'module.exports'
-    ],
-    'node/global-require': 'error',
-    'node/no-deprecated-api': 'error',
-    'node/no-new-require': 'error',
-    'node/no-path-concat': 'error',
-    'node/no-unsupported-features/es-builtins': 'error',
-    'node/no-unsupported-features/es-syntax': 'error',
-    'node/no-unsupported-features/node-builtins': 'error',
     'no-console': 'error',
-    'no-duplicate-imports': 'error',
     'no-empty-function': 'error',
     'no-eq-null': 'error',
-    'no-eval': 'error',
     'no-extend-native': 'error',
     'no-extra-bind': 'error',
     'no-implicit-globals': 'error',
-    'no-implied-eval': 'error',
-    'no-import-assign': 'error',
     'no-inline-comments': 'error',
     'no-invalid-this': 'error',
     'no-multi-assign': 'error',
@@ -172,6 +143,7 @@ module.exports = {
     ],
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
+    'prefer-destructuring': 'error',
     'prefer-regex-literals': 'error',
     'prefer-rest-params': 'error',
     'prefer-template': 'error',
@@ -216,24 +188,16 @@ module.exports = {
     'unicorn/no-abusive-eslint-disable': 'error',
     'unicorn/no-array-instanceof': 'error',
     'unicorn/no-for-loop': 'error',
-    'unicorn/no-new-buffer': 'error',
     'unicorn/no-null': 'error',
+    'unicorn/no-unreadable-array-destructuring': 'error',
     'unicorn/no-unsafe-regex': 'error',
     'unicorn/no-unused-properties': 'error',
     'unicorn/no-zero-fractions': 'error',
-    'unicorn/prefer-add-event-listener': 'error',
-    'unicorn/prefer-dataset': 'error',
-    'unicorn/prefer-event-key': 'error',
     'unicorn/prefer-includes': 'error',
-    'unicorn/prefer-modern-dom-apis': 'error',
     'unicorn/prefer-negative-index': 'error',
-    'unicorn/prefer-node-append': 'error',
-    'unicorn/prefer-node-remove': 'error',
     'unicorn/prefer-number-properties': 'error',
-    'unicorn/prefer-query-selector': 'error',
     'unicorn/prefer-set-has': 'error',
     'unicorn/prefer-starts-ends-with': 'error',
-    'unicorn/prefer-text-content': 'error',
     'unicorn/prefer-trim-start-end': 'error',
     'unicorn/prevent-abbreviations': 'error',
     'unicorn/throw-new-error': 'error',
