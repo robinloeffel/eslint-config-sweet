@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sweet",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "ESLint config for the most sweet-ass JavaScript. 🤙🏼",
   "main": "index.js",
   "repository": "robinloeffel/eslint-config-sweet",
@@ -29,10 +29,10 @@
     "eslint-plugin-unicorn": "^19.0.1"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
+    "eslint": "^7.0.0",
     "onchange": "^7.0.2"
   },
   "peerDependencies": {
-    "eslint": "^6.8.0"
+    "eslint": "^7.0.0"
   }
 }

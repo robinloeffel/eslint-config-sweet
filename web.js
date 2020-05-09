@@ -9,15 +9,13 @@ module.exports = {
   rules: {
     'compat/compat': 'error',
     'import/no-useless-path-segments': [
-      'error',
-      {
+      'error', {
         noUselessIndex: true
       }
     ],
     'no-duplicate-imports': 'error',
     'no-eval': 'error',
     'no-implied-eval': 'error',
-    'no-import-assign': 'error',
     'unicorn/prefer-add-event-listener': 'error',
     'unicorn/prefer-dataset': 'error',
     'unicorn/prefer-event-key': 'error',

@@ -19,8 +19,7 @@ module.exports = {
     ],
     'array-bracket-spacing': [
       'error',
-      'always',
-      {
+      'always', {
         objectsInArrays: false,
         arraysInArrays: false
       }
@@ -44,10 +43,15 @@ module.exports = {
     'comma-spacing': 'error',
     'comma-style': 'error',
     'consistent-return': 'error',
+    'computed-property-spacing': [
+      'error',
+      'never'
+    ],
     curly: [
       'error',
       'all'
     ],
+    'default-case-last': 'error',
     'default-param-last': 'error',
     'dot-location': [
       'error',
@@ -97,6 +101,7 @@ module.exports = {
     'no-eq-null': 'error',
     'no-extend-native': 'error',
     'no-extra-bind': 'error',
+    'no-extra-parens': 'error',
     'no-implicit-globals': 'error',
     'no-inline-comments': 'error',
     'no-invalid-this': 'error',
@@ -104,8 +109,7 @@ module.exports = {
     'no-multi-spaces': 'error',
     'no-multi-str': 'error',
     'no-multiple-empty-lines': [
-      'error',
-      {
+      'error', {
         max: 2,
         maxBOF: 0,
         maxEOF: 1
@@ -127,8 +131,7 @@ module.exports = {
     'no-void': 'error',
     'no-whitespace-before-property': 'error',
     'object-curly-newline': [
-      'error',
-      {
+      'error', {
         consistent: true
       }
     ],
@@ -167,8 +170,7 @@ module.exports = {
     ],
     'space-before-blocks': 'error',
     'space-before-function-paren': [
-      'error',
-      {
+      'error', {
         asyncArrow: 'always',
         anonymous: 'never',
         named: 'never'

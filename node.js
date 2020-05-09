@@ -9,14 +9,12 @@ module.exports = {
   rules: {
     'import/no-extraneous-dependencies': 'error',
     'import/no-unresolved': [
-      'error',
-      {
+      'error', {
         commonjs: true
       }
     ],
     'import/no-useless-path-segments': [
-      'error',
-      {
+      'error', {
         commonjs: true,
         noUselessIndex: true
       }
