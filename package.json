@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sweet",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "ESLint config for the most sweet-ass JavaScript. 🤙🏼",
   "main": "index.js",
   "repository": "robinloeffel/eslint-config-sweet",
@@ -9,6 +9,12 @@
     "email": "hi@robinloeffel.ch",
     "url": "robinloeffel.ch"
   },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "node",
+    "web"
+  ],
   "files": [
     "index.js",
     "web.js",
@@ -23,16 +29,16 @@
     "start:node": "onchange -i test/node.js -- eslint -c node.js test/node.js"
   },
   "dependencies": {
-    "eslint-plugin-compat": "^3.5.1",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-unicorn": "^19.0.1"
+    "eslint-plugin-compat": "3.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-node": "11.x",
+    "eslint-plugin-unicorn": "20.x"
   },
   "devDependencies": {
-    "eslint": "^7.0.0",
-    "onchange": "^7.0.2"
+    "eslint": "7.x",
+    "onchange": "7.x"
   },
   "peerDependencies": {
-    "eslint": "^7.0.0"
+    "eslint": "7.x"
   }
 }
