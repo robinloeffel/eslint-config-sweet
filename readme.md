@@ -1,13 +1,17 @@
 # eslint-config-sweet
 
-[![package license](https://img.shields.io/npm/l/eslint-config-sweet)](license) [![version on npm](https://img.shields.io/npm/v/eslint-config-sweet)](https://www.npmjs.com/package/eslint-config-sweet) [![required node version](https://img.shields.io/node/v/eslint-config-sweet)](https://github.com/nodejs/Release) [![npm peer dependency](https://img.shields.io/npm/dependency-version/eslint-config-sweet/peer/eslint?label=eslint%20peer%20dep)](https://github.com/eslint/eslint)
+[![latest version on npm](https://img.shields.io/npm/v/eslint-config-sweet)](https://www.npmjs.com/package/eslint-config-sweet)
+[![npm downloads a month](https://img.shields.io/npm/dm/eslint-config-sweet)](https://www.npmjs.com/package/eslint-config-sweet)
+[![minimum required node version](https://img.shields.io/node/v/eslint-config-sweet)](https://github.com/nodejs/Release)
+[![eslint peer dependency](https://img.shields.io/npm/dependency-version/eslint-config-sweet/peer/eslint?label=eslint%20peer%20dep)](https://github.com/eslint/eslint)
+[![package license](https://img.shields.io/npm/l/eslint-config-sweet)](license)
 
 > ESLint [shareable config](https://eslint.org/docs/developer-guide/shareable-configs.html) for the most sweet-ass JavaScript. 🤙🏼
 
 ## Installation
 
 ```bash
-yarn add eslint-config-sweet
+yarn add eslint-config-sweet --dev
 ```
 
 ## Usage
@@ -29,7 +33,7 @@ There is also an entry for Node.js environments: `sweet/node`. I heavily recomme
 
 Sweet, man. That's the point. On a more serious note though: It mostly, of course, enforces consistency, even though it may not look like it the first few moments. It will make your code feel more lightweight and nudge you towards using more modern APIs and good practices, while maintaining readability and keeping complexity down.
 
-You can check out all of the settings and what exactly is happening here in the [`index.js` file](index.js) in this repo.
+You can check out all of the settings and what exactly is happening here in the [`index.js`](index.js), [`web.js`](web.js) and [`node.js`](node.js) files in this repo.
 
 ## Nice to know
 
@@ -39,7 +43,7 @@ If you extend from this config without specifying either `web` or `node`, it wil
 
 ## `sweet/web` and transpilers
 
-So you're using [Babel](https://github.com/babel/babel), [Bublé](https://github.com/bublejs/buble) or whatnot to perform transpilations on your source code? Awesome sauce! Since `sweet/web` is configured to notify you about language features that aren't supported on your environments yet, you can tell it to chill out. Do this by adding all the features you've polyfilled to your local ESLint config, [like so](https://github.com/amilajack/eslint-plugin-compat#adding-polyfills).
+So you're using [Babel](https://github.com/babel/babel), [Bublé](https://github.com/bublejs/buble) or whatnot to perform transpilations on your source code? Awesome sauce! Since `sweet/web` is configured to notify you about language features that aren't supported on your environments yet, you can tell it to chill out. Do this by adding all the features you've polyfilled to your local ESLint config, [like so](https://github.com/amilajack/eslint-plugin-compat#adding-polyfills). You may even disable this feature completely by adding `'compat/compat': 'off'` to your local rules.
 
 ## Plugins in use
 
