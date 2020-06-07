@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sweet",
-  "version": "0.6.2",
+  "version": "1.0.0",
   "description": "ESLint config for the most sweet-ass JavaScript. 🤙🏼",
   "main": "index.js",
   "repository": "robinloeffel/eslint-config-sweet",
@@ -25,8 +25,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "start:web": "onchange -i test/web.js -- eslint -c web.js test/web.js",
-    "start:node": "onchange -i test/node.js -- eslint -c node.js test/node.js"
+    "start:web": "onchange -i test/web.js index.js web.js -- eslint -c web.js test/web.js",
+    "start:node": "onchange -i test/node.js index.js node.js -- eslint -c node.js test/node.js",
+    "start": "concurrently 'yarn start:web' 'yarn start:node'"
   },
   "dependencies": {
     "eslint-plugin-compat": "3.x",
@@ -35,6 +36,7 @@
     "eslint-plugin-unicorn": "20.x"
   },
   "devDependencies": {
+    "concurrently": "5.x",
     "eslint": "7.x",
     "onchange": "7.x"
   },

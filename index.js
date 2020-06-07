@@ -14,8 +14,9 @@ module.exports = {
   ],
   rules: {
     'array-bracket-newline': [
-      'error',
-      'consistent'
+      'error', {
+        minItems: 3
+      }
     ],
     'array-bracket-spacing': [
       'error',
@@ -132,7 +133,7 @@ module.exports = {
     'no-whitespace-before-property': 'error',
     'object-curly-newline': [
       'error', {
-        consistent: true
+        minProperties: 3
       }
     ],
     'object-curly-spacing': [
@@ -181,10 +182,12 @@ module.exports = {
       'never'
     ],
     'space-infix-ops': 'error',
+    'template-tag-spacing': 'error',
     'unicorn/better-regex': 'error',
     'unicorn/catch-error-name': 'error',
     'unicorn/consistent-function-scoping': 'error',
     'unicorn/error-message': 'error',
+    'unicorn/explicit-length-check': 'error',
     'unicorn/filename-case': 'error',
     'unicorn/new-for-builtins': 'error',
     'unicorn/no-abusive-eslint-disable': 'error',
