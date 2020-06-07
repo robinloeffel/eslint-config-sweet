@@ -14,9 +14,8 @@ module.exports = {
   ],
   rules: {
     'array-bracket-newline': [
-      'error', {
-        minItems: 3
-      }
+      'error',
+      'consistent'
     ],
     'array-bracket-spacing': [
       'error',
@@ -133,7 +132,7 @@ module.exports = {
     'no-whitespace-before-property': 'error',
     'object-curly-newline': [
       'error', {
-        minProperties: 3
+        consistent: true
       }
     ],
     'object-curly-spacing': [

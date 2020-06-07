@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.1.0
+_2020-06-07_
+
+- Only enforce array item newlines to be consistent (`array-bracket-newline`)
+- Only enforce object prop newlines to be consistent (`object-curly-newline`)
+
 ## v1.0.0
 _2020-06-07_
 
