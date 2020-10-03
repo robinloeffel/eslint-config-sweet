@@ -32,5 +32,12 @@ module.exports = {
     'node/no-unsupported-features/es-syntax': 'error',
     'node/no-unsupported-features/node-builtins': 'error',
     'unicorn/no-new-buffer': 'error'
-  }
+  },
+  overrides: [{
+    files: [ 'rollup.config.js' ],
+    rules: {
+      'node/no-unsupported-features/es-builtins': 'off',
+      'node/no-unsupported-features/es-syntax': 'off'
+    }
+  }]
 };

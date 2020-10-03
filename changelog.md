@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.0.0
+_2020-09-29_
+
+- **Added:** `unicorn/prefer-array-find`
+- Automatically detect common JS config files and lint them accordingly
+
 ## v1.1.0
 _2020-06-07_
 

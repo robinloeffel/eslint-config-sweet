@@ -3,9 +3,7 @@ module.exports = {
   env: {
     node: false
   },
-  plugins: [
-    'compat'
-  ],
+  plugins: [ 'compat' ],
   rules: {
     'compat/compat': 'error',
     'import/no-useless-path-segments': [
@@ -24,5 +22,12 @@ module.exports = {
     'unicorn/prefer-node-remove': 'error',
     'unicorn/prefer-query-selector': 'error',
     'unicorn/prefer-text-content': 'error'
-  }
+  },
+  overrides: [{
+    files: [
+      'gulpfile.js',
+      '*.config.js'
+    ],
+    extends: require.resolve('./node')
+  }]
 };

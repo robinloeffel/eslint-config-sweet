@@ -1,13 +1,13 @@
 {
   "name": "eslint-config-sweet",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "ESLint config for the most sweet-ass JavaScript. 🤙🏼",
   "main": "index.js",
   "repository": "robinloeffel/eslint-config-sweet",
   "author": {
     "name": "Robin Löffel",
     "email": "hi@robinloeffel.ch",
-    "url": "robinloeffel.ch"
+    "url": "https://robinloeffel.ch"
   },
   "keywords": [
     "eslint",
@@ -27,13 +27,14 @@
   "scripts": {
     "start:web": "onchange -i test/web.js index.js web.js -- eslint -c web.js test/web.js",
     "start:node": "onchange -i test/node.js index.js node.js -- eslint -c node.js test/node.js",
-    "start": "concurrently 'yarn start:web' 'yarn start:node'"
+    "start:configs": "onchange -i test/*.config.js -- eslint -c web.js test/*.config.js",
+    "start": "concurrently 'yarn start:web' 'yarn start:node' 'yarn start:configs'"
   },
   "dependencies": {
     "eslint-plugin-compat": "3.x",
     "eslint-plugin-import": "2.x",
     "eslint-plugin-node": "11.x",
-    "eslint-plugin-unicorn": "20.x"
+    "eslint-plugin-unicorn": "22.x"
   },
   "devDependencies": {
     "concurrently": "5.x",

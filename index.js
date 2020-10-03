@@ -197,6 +197,7 @@ module.exports = {
     'unicorn/no-unsafe-regex': 'error',
     'unicorn/no-unused-properties': 'error',
     'unicorn/no-zero-fractions': 'error',
+    'unicorn/prefer-array-find': 'error',
     'unicorn/prefer-includes': 'error',
     'unicorn/prefer-negative-index': 'error',
     'unicorn/prefer-number-properties': 'error',
