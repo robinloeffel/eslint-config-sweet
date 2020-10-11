@@ -3,9 +3,7 @@ module.exports = {
   env: {
     browser: false
   },
-  plugins: [
-    'node'
-  ],
+  plugins: [ 'node' ],
   rules: {
     'import/no-extraneous-dependencies': 'error',
     'import/no-unresolved': [

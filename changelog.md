@@ -1,5 +1,10 @@
 # Changelog
 
+## v2.0.1
+_2020-10-11_
+
+- Add `.eslintrc.js` to the array of configs in `web.js`
+
 ## v2.0.0
 _2020-09-29_
 
