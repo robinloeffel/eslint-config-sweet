@@ -79,7 +79,9 @@ module.exports = {
     'import/exports-last': 'error',
     'import/extensions': [
       'error',
-      'never'
+      'always', {
+        js: 'never'
+      }
     ],
     'import/first': 'error',
     'import/newline-after-import': 'error',
@@ -203,6 +205,7 @@ module.exports = {
     'unicorn/prefer-number-properties': 'error',
     'unicorn/prefer-set-has': 'error',
     'unicorn/prefer-starts-ends-with': 'error',
+    'unicorn/prefer-ternary': 'error',
     'unicorn/prefer-trim-start-end': 'error',
     'unicorn/prevent-abbreviations': 'error',
     'unicorn/throw-new-error': 'error',

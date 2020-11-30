@@ -1,5 +1,5 @@
 module.exports = {
-  extends: require.resolve('.'),
+  extends: require.resolve('./base'),
   env: {
     browser: false
   },
