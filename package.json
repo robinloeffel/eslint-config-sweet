@@ -1,47 +1,45 @@
 {
   "name": "eslint-config-sweet",
-  "version": "2.0.1",
-  "description": "ESLint config for the most sweet-ass JavaScript. 🤙🏼",
-  "main": "index.js",
-  "repository": "robinloeffel/eslint-config-sweet",
-  "author": {
-    "name": "Robin Löffel",
-    "email": "hi@robinloeffel.ch",
-    "url": "https://robinloeffel.ch"
-  },
+  "version": "3.0.0",
+  "description": "ESLint shareable config for the most sweet-ass JavaScript. 🤙🏼",
+  "main": "web.js",
+  "repository": "https://github.com/robinloeffel/eslint-config-sweet.git",
+  "homepage": "https://github.com/robinloeffel/eslint-config-sweet",
+  "bugs": "https://github.com/robinloeffel/eslint-config-sweet/issues",
+  "author": "Robin Löffel (https://robinloeffel.ch) <hi@robinloeffel.ch>",
+  "license": "MIT",
   "keywords": [
     "eslint",
     "eslint-config",
     "node",
     "web"
   ],
+  "engines": {
+    "node": ">=10.12.0"
+  },
   "files": [
-    "index.js",
+    "base.js",
     "web.js",
     "node.js"
   ],
-  "engines": {
-    "node": ">=10"
+  "dependencies": {
+    "eslint-plugin-compat": "^3.8.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-unicorn": "^23.0.0"
   },
-  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "eslint": "^7.14.0",
+    "onchange": "^7.1.0"
+  },
+  "peerDependencies": {
+    "eslint": "7.x"
+  },
   "scripts": {
     "start:web": "onchange -i test/web.js index.js web.js -- eslint -c web.js test/web.js",
     "start:node": "onchange -i test/node.js index.js node.js -- eslint -c node.js test/node.js",
     "start:configs": "onchange -i test/*.config.js -- eslint -c web.js test/*.config.js",
     "start": "concurrently 'yarn start:web' 'yarn start:node' 'yarn start:configs'"
-  },
-  "dependencies": {
-    "eslint-plugin-compat": "3.x",
-    "eslint-plugin-import": "2.x",
-    "eslint-plugin-node": "11.x",
-    "eslint-plugin-unicorn": "22.x"
-  },
-  "devDependencies": {
-    "concurrently": "5.x",
-    "eslint": "7.x",
-    "onchange": "7.x"
-  },
-  "peerDependencies": {
-    "eslint": "7.x"
   }
 }
