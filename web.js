@@ -26,7 +26,7 @@ module.exports = {
   overrides: [{
     files: [
       'gulpfile.js',
-      '.eslintrc.js',
+      '.*rc.js',
       '*.config.js'
     ],
     extends: require.resolve('./node')
