@@ -1,3 +1,5 @@
+import { dependencies } from '../package';
+
 export default {
   input: '../',
   plugins: [
@@ -7,5 +9,6 @@ export default {
   output: {
     file: 'bundle.js',
     format: 'esm'
-  }
+  },
+  external: Object.keys(dependencies)
 };

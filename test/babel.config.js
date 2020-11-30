@@ -3,5 +3,5 @@ module.exports = {
     bugfixes: true,
     corejs: 3,
     useBuiltIns: 'usage'
-  }]]
+  },]]
 };
