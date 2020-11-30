@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.0.0
+
+- Add `unicorn/prefer-ternary` rule
+- Always include the file extension except for `js` files
+- Make `sweet/web` the default entry (now only `sweet` will do the trick)
+
 ## v2.0.1
 _2020-10-11_
 
