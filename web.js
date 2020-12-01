@@ -26,6 +26,7 @@ module.exports = {
   overrides: [{
     files: [
       'gulpfile.js',
+      'gulpfile.*.js',
       '.*rc.js',
       '*.config.js'
     ],

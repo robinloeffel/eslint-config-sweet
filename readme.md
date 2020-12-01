@@ -6,7 +6,7 @@
 [![eslint peer dependency](https://img.shields.io/npm/dependency-version/eslint-config-sweet/peer/eslint?label=eslint%20peer%20dep)](https://github.com/eslint/eslint)
 [![package license](https://img.shields.io/npm/l/eslint-config-sweet)](license)
 
-> ESLint [shareable config](https://eslint.org/docs/developer-guide/shareable-configs.html) for the most sweet-ass JavaScript. 🤙🏼
+> ESLint [shareable config](https://eslint.org/docs/developer-guide/shareable-configs.html) for the most sweet-ass vanilla JavaScript. 🤙🏼
 
 ## Installation
 

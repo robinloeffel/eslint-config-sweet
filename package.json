@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-sweet",
-  "version": "3.0.0",
-  "description": "ESLint shareable config for the most sweet-ass JavaScript. 🤙🏼",
+  "version": "3.0.1",
+  "description": "ESLint shareable config for the most sweet-ass vanilla JavaScript. 🤙🏼",
   "main": "web.js",
   "repository": "https://github.com/robinloeffel/eslint-config-sweet.git",
   "homepage": "https://github.com/robinloeffel/eslint-config-sweet",

@@ -1,5 +1,9 @@
 # Changelog
 
+## v3.0.1
+
+- Recognize more config files
+
 ## v3.0.0
 
 - Add `unicorn/prefer-ternary` rule

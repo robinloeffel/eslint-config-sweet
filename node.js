@@ -32,10 +32,18 @@ module.exports = {
     'unicorn/no-new-buffer': 'error'
   },
   overrides: [{
-    files: [ 'rollup.config.js' ],
+    files: [
+      'gulpfile.*.js',
+      '*.config.js'
+    ],
     rules: {
       'node/no-unsupported-features/es-builtins': 'off',
       'node/no-unsupported-features/es-syntax': 'off'
+    }
+  }, {
+    files: [ 'stylelint.config.js' ],
+    rules: {
+      'unicorn/no-null': 'off'
     }
   }]
 };
