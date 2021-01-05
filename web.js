@@ -15,13 +15,13 @@ module.exports = {
     'no-eval': 'error',
     'no-implied-eval': 'error',
     'unicorn/prefer-add-event-listener': 'error',
-    'unicorn/prefer-dataset': 'error',
-    'unicorn/prefer-event-key': 'error',
+    'unicorn/prefer-dom-node-append': 'error',
+    'unicorn/prefer-dom-node-dataset': 'error',
+    'unicorn/prefer-dom-node-remove': 'error',
+    'unicorn/prefer-dom-node-text-content': 'error',
+    'unicorn/prefer-keyboard-event-key': 'error',
     'unicorn/prefer-modern-dom-apis': 'error',
-    'unicorn/prefer-node-append': 'error',
-    'unicorn/prefer-node-remove': 'error',
-    'unicorn/prefer-query-selector': 'error',
-    'unicorn/prefer-text-content': 'error'
+    'unicorn/prefer-query-selector': 'error'
   },
   overrides: [{
     files: [

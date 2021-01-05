@@ -1,10 +1,25 @@
 # Changelog
 
+## v4.0.0
+_2021-01-05_
+
+- Update `eslint-plugin-compat`
+- Upgrade `eslint-plugin-unicorn`
+- Add `no-lonely-if` rule (`error`)
+- Add `unicorn/no-lonely-if` rule (`error`)
+- Add `unicorn/empty-brace-spaces` rule (`error`)
+- Add `unicorn/prefer-array-some` rule (`error`)
+- Add `unicorn/prefer-date-now` rule (`error`)
+- Add `unicorn/prefer-default-parameters` rule (`error`)
+- Refactor `eslin-plugin-unicorn` rule names
+
 ## v3.0.1
+_2020-12-01_
 
 - Recognize more config files
 
 ## v3.0.0
+_2020-11-30_
 
 - Add `unicorn/prefer-ternary` rule
 - Always include the file extension except for `js` files
