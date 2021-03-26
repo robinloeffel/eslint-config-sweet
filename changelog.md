@@ -1,5 +1,13 @@
 # Changelog
 
+## v5.0.0
+
+- Upgrade `eslint-plugin-unicorn`
+- Add `unicorn/consistent-destructuring` rule
+- Add `unicorn/no-array-push-push` rule
+- Add `unicorn/prefer-array-flat` rule
+- Add `unicorn/prefer-array-index-of` rule
+
 ## v4.0.0
 _2021-01-05_
 
