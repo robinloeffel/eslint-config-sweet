@@ -1,5 +1,20 @@
 # Changelog
 
+## v6.0.0
+- Upgrade `eslint-plugin-compat`
+- Upgrade `eslint-plugin-import`
+- Upgrade `eslint-plugin-unicorn`
+- Add `unicorn/prefer-at` rule
+- Add `unicorn/prefer-prototype-methods` rule
+- Add `unicorn/prefer-array-flat-map` rule
+- Add `unicorn/prefer-switch` rule
+- Add `unicorn/no-nested-ternary` rule
+- Add `unicorn/no-useless-spread` rule
+- Add `unicorn/no-useless-undefined` rule
+- Add `unicorn/no-useless-length-check` rule
+- Add `unicorn/prefer-spread` rule
+- Add `unicorn/prefer-string-slice` rule
+
 ## v5.0.0
 
 - Upgrade `eslint-plugin-unicorn`
