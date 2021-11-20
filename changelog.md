@@ -1,6 +1,20 @@
 # Changelog
 
+## v7.0.0
+_2021-11-20_
+
+- Upgrade `eslint-plugin-compat`
+- Upgrade `eslint-plugin-import`
+- Upgrade `eslint-plugin-unicorn`
+- Add `unicorn/no-empty-file` rule
+- Add `unicorn/no-invalid-remove-event-listener` rule
+- Add `unicorn/no-useless-fallback-in-spread` rule
+- Add `unicorn/prefer-export-from` rule
+- Add `unicorn/template-indent` rule
+
 ## v6.0.0
+_2021-09-04_
+
 - Upgrade `eslint-plugin-compat`
 - Upgrade `eslint-plugin-import`
 - Upgrade `eslint-plugin-unicorn`
@@ -16,6 +30,7 @@
 - Add `unicorn/prefer-string-slice` rule
 
 ## v5.0.0
+_2021-03-26_
 
 - Upgrade `eslint-plugin-unicorn`
 - Add `unicorn/consistent-destructuring` rule

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sweet",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "description": "ESLint shareable config for the most sweet-ass vanilla JavaScript. 🤙🏼",
   "main": "web.js",
   "repository": "https://github.com/robinloeffel/eslint-config-sweet.git",
@@ -15,7 +15,7 @@
     "web"
   ],
   "engines": {
-    "node": ">=10.12.0"
+    "node": ">=12.22"
   },
   "files": [
     "base.js",
@@ -23,18 +23,18 @@
     "node.js"
   ],
   "dependencies": {
-    "eslint-plugin-compat": "^3.13.0",
-    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-compat": "^4.0.0",
+    "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-unicorn": "^35.0.0"
+    "eslint-plugin-unicorn": "^38.0.1"
   },
   "devDependencies": {
-    "concurrently": "^6.2.1",
-    "eslint": "^7.32.0",
+    "concurrently": "^6.4.0",
+    "eslint": "^8.2.0",
     "onchange": "^7.1.0"
   },
   "peerDependencies": {
-    "eslint": "^7.32.0"
+    "eslint": "^8.2.0"
   },
   "scripts": {
     "start:web": "onchange -i test/web.js index.js web.js -- eslint -c web.js test/web.js",
