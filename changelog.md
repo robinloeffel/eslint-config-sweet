@@ -1,5 +1,24 @@
 # Changelog
 
+## v8.0.0
+_2022-01-09_
+
+- Update `engines` in package.json
+- Change `no-multiple-empty-lines` rule
+- Add `no-array-constructor` rule
+- Add `no-eval` rule
+- Add `no-new` rule
+- Add `no-new-object` rule
+- Add `no-new-wrappers` rule
+- Add `no-plusplus` rule
+- Add `no-proto` rule
+- Add `no-return-assign` rule
+- Add `no-trailing-spaces` rule
+- Add `no-useless-computed-key` rule
+- Add `operator-linebreak` rule
+- Add `padded-blocks` rule
+- Add `unicorn/no-await-expression-member` rule
+
 ## v7.0.0
 _2021-11-20_
 

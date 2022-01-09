@@ -6,11 +6,9 @@ module.exports = {
   plugins: [ 'compat' ],
   rules: {
     'compat/compat': 'error',
-    'import/no-useless-path-segments': [
-      'error', {
-        noUselessIndex: true
-      }
-    ],
+    'import/no-useless-path-segments': ['error', {
+      noUselessIndex: true
+    }],
     'no-duplicate-imports': 'error',
     'no-eval': 'error',
     'no-implied-eval': 'error',

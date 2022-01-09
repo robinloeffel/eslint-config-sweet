@@ -6,20 +6,14 @@ module.exports = {
   plugins: [ 'node' ],
   rules: {
     'import/no-extraneous-dependencies': 'error',
-    'import/no-unresolved': [
-      'error', {
-        commonjs: true
-      }
-    ],
-    'import/no-useless-path-segments': [
-      'error', {
-        commonjs: true,
-        noUselessIndex: true
-      }
-    ],
-    'node/exports-style': [
-      'error',
-      'module.exports'
+    'import/no-unresolved': ['error', {
+      commonjs: true
+    }],
+    'import/no-useless-path-segments': ['error', {
+      commonjs: true,
+      noUselessIndex: true
+    }],
+    'node/exports-style': ['error','module.exports'
     ],
     'node/global-require': 'error',
     'node/no-exports-assign': 'error',
@@ -34,7 +28,8 @@ module.exports = {
   overrides: [{
     files: [
       'gulpfile.*.js',
-      '*.config.js'
+      '*.config.js',
+      '*.mjs'
     ],
     rules: {
       'node/no-unsupported-features/es-builtins': 'off',
