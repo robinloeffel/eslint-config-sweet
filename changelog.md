@@ -1,5 +1,10 @@
 # Changelog
 
+## v8.0.1
+_2022-01-11_
+
+- Change `no-multiple-empty-lines` rule
+
 ## v8.0.0
 _2022-01-09_
 
