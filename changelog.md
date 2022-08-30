@@ -1,5 +1,10 @@
 # Changelog
 
+## v9.0.0
+_2022-08-30_
+
+- Add `prefer-logical-operator-over-ternary` rule
+
 ## v8.0.1
 _2022-01-11_
 

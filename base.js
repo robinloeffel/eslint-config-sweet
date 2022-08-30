@@ -108,6 +108,7 @@ module.exports = {
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
     'prefer-destructuring': 'error',
+    'prefer-logical-operator-over-ternary': 'error',
     'prefer-regex-literals': 'error',
     'prefer-rest-params': 'error',
     'prefer-template': 'error',
