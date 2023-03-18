@@ -1,5 +1,22 @@
 # Changelog
 
+## v10.0.0
+_2023-03-18_
+
+### Complete re-write
+
+- Drop `eslint-plugin-compat`
+- Drop `eslint-plugin-import`
+- Drop `eslint-plugin-node`
+- Add `@typescript-eslint/eslint-plugin` dependency
+- Add `@typescript-eslint/parser` dependency
+- Add `typescript` peer dependency
+- Upgrade `eslint-plugin-unicorn` dependency
+- Upgrade `eslint` peer dependency
+- Update rules accordingly
+- Drop `sweet/node` entry
+- Drop `sweet/web` entry
+
 ## v9.0.0
 _2022-08-30_
 
