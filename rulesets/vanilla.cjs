@@ -109,7 +109,6 @@ module.exports = {
     "no-lone-blocks": "error",
     "no-lonely-if": "error",
     "no-loop-func": "error",
-    "no-magic-numbers": "error",
     "no-mixed-operators": "error",
     "no-multi-assign": "error",
     "no-multi-str": "error",
@@ -179,7 +178,7 @@ module.exports = {
       arraysInArrays: false
     }],
     "array-element-newline": [ "error", "consistent" ],
-    "arrow-parens": "error",
+    "arrow-parens": [ "error", "as-needed" ],
     "arrow-spacing": "error",
     "block-spacing": "error",
     "brace-style": "error",

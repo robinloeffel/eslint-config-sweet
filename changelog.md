@@ -1,5 +1,10 @@
 # Changelog
 
+## v11.0.0
+_2023-03-18_
+
+- Switch to `plugin:unicorn/recommended` for most rules
+
 ## v10.0.0
 _2023-03-18_
 
