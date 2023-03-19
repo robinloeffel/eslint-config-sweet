@@ -1,6 +1,7 @@
 // sorted in order of appearance in the docs
 // https://eslint.org/docs/latest/rules
 
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   rules: {
     // possible problems

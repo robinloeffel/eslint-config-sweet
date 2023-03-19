@@ -1,10 +1,6 @@
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
-  plugins: [ "unicorn" ],
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module"
-  },
   extends: [
     "./rulesets/vanilla.cjs",
     "./rulesets/unicorn.cjs"
@@ -22,9 +18,9 @@ module.exports = {
       node: true
     }
   }, {
-    files: [ "*.ts" ],
+    files: "*.ts",
     parser: "@typescript-eslint/parser",
-    plugins: [ "@typescript-eslint" ],
-    extends: [ "./rulesets/typescript.cjs" ]
+    extends: "./rulesets/typescript.cjs",
+    plugins: [ "@typescript-eslint" ]
   }]
 };

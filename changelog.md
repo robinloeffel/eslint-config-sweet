@@ -1,5 +1,12 @@
 # Changelog
 
+## v11.0.1
+_2023-03-19_
+
+- clean up dependencies
+- clean up duplicate config props
+- add type hints in config and rule sets
+
 ## v11.0.0
 _2023-03-18_
 
