@@ -1,5 +1,18 @@
 # Changelog
 
+## v12.0.0
+_2023-08-23_
+
+- require at least `node@16`
+- update `@typescript-eslint/eslint-plugin` dependency
+- update `@typescript-eslint/parser` dependency
+- update `eslint-plugin-unicorn` dependency
+- update `eslint` peer dependency
+- update `typescript` peer dependency
+- clean up rules
+- separate out `typescript` config
+- introduce `typescript-typed` config
+
 ## v11.0.1
 _2023-03-19_
 
