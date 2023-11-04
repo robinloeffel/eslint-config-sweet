@@ -1,10 +1,14 @@
 {
   "name": "eslint-config-sweet",
-  "version": "12.0.0",
+  "version": "13.0.0",
   "description": "ESLint shareable config for the most sweet-ass vanilla JavaScript. 🤙🏼",
-  "main": "configs/javascript.cjs",
+  "main": "./configs/javascript.cjs",
+  "exports": {
+    ".": "./configs/javascript.cjs",
+    "./typescript": "./configs/typescript.cjs"
+  },
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
   "repository": "https://github.com/robinloeffel/eslint-config-sweet.git",
   "homepage": "https://github.com/robinloeffel/eslint-config-sweet",
@@ -20,20 +24,22 @@
     "configs"
   ],
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.4.0",
-    "@typescript-eslint/parser": "^6.4.0",
-    "eslint-plugin-unicorn": "^48.0.1"
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "eslint-plugin-jsonc": "^2.10.0",
+    "eslint-plugin-unicorn": "^49.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.7.1",
-    "@commitlint/config-conventional": "^17.7.0",
-    "@types/eslint": "^8.44.2",
-    "eslint": "^8.47.0",
+    "@commitlint/cli": "^18.2.0",
+    "@commitlint/config-conventional": "^18.1.0",
+    "@commitlint/types": "^18.1.0",
+    "@types/eslint": "^8.44.6",
+    "eslint": "^8.53.0",
     "husky": "^8.0.3",
-    "typescript": "^5.1.6"
+    "typescript": "^5.2.2"
   },
   "peerDependencies": {
-    "eslint": "^8.47.0",
-    "typescript": "^5.1.6"
+    "eslint": "^8",
+    "typescript": "^4 || ^5"
   }
 }

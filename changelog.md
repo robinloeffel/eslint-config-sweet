@@ -1,4 +1,16 @@
-# Changelog
+# changelog
+
+## v13.0.0
+_2023-11-04_
+
+- require at least `node@18`
+- update `@typescript-eslint/eslint-plugin` dependency
+- update `@typescript-eslint/parser` dependency
+- update `eslint-plugin-unicorn` dependency
+- add `eslint-plugin-jsonc` dependency
+- loosen `eslint` peer dependency
+- loosen `typescript` peer dependency
+- directly export `typescript` config
 
 ## v12.0.0
 _2023-08-23_
