@@ -1,5 +1,10 @@
 # changelog
 
+## v14.0.0
+_2023-11-09_
+
+- the `strict` ts config was a little too strict
+
 ## v13.0.0
 _2023-11-04_
 
