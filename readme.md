@@ -20,8 +20,16 @@ As soon as you've installed the config, you can extend from it. To do that, find
 
 ```js
 module.exports = {
-  extends: "sweet"
+  extends: [ "sweet" ]
 };
+```
+
+Or, if TypeScript is your jam:
+
+```js
+module.exports = {
+  extends: [ "sweet/typescript" ]
+}
 ```
 
 ## How will my code look when using this?
@@ -30,7 +38,7 @@ Sweet, man. That's the point. On a more serious note though: It mostly, of cours
 
 ## Nice to know
 
-This config doesn't give flying damn about your indentation. If you want to enforce a certain style, which I strongly recommend, you can either go ahead and add your desired [`indent`](https://eslint.org/docs/rules/indent) rule to your config or do what I do: use [editorconfig](https://editorconfig.org/). It's sole purpose is this kind of stuff.
+For formatting, please go ahead and use [`prettier`](https://prettier.io/), as well as include their [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) as the last item in your `extends` array.
 
 ## License
 

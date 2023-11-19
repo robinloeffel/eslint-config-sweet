@@ -1,5 +1,13 @@
 # changelog
 
+## v15.0.0
+_2023-11-19_
+
+- add `eslint-plugin-deprecation` dependency
+- add `eslint-plugin-perfectionist` dependency
+- add `logical-assignment-operators` rule
+- add `operator-assignment` rule
+
 ## v14.0.0
 _2023-11-09_
 

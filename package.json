@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sweet",
-  "version": "14.0.0",
+  "version": "15.0.0",
   "description": "ESLint shareable config for the most sweet-ass vanilla JavaScript. 🤙🏼",
   "main": "./configs/javascript.cjs",
   "exports": {
@@ -24,17 +24,19 @@
     "configs"
   ],
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.9.1",
-    "@typescript-eslint/parser": "^6.9.1",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "eslint-plugin-deprecation": "^2.0.0",
     "eslint-plugin-jsonc": "^2.10.0",
+    "eslint-plugin-perfectionist": "^2.4.0",
     "eslint-plugin-unicorn": "^49.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^18.2.0",
-    "@commitlint/config-conventional": "^18.1.0",
-    "@commitlint/types": "^18.1.0",
-    "@types/eslint": "^8.44.6",
-    "eslint": "^8.53.0",
+    "@commitlint/cli": "^18.4.2",
+    "@commitlint/config-conventional": "^18.4.2",
+    "@commitlint/types": "^18.4.0",
+    "@types/eslint": "^8.44.7",
+    "eslint": "^8.54.0",
     "husky": "^8.0.3",
     "typescript": "^5.2.2"
   },
