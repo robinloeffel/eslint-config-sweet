@@ -1,5 +1,3 @@
-/* eslint-disable sort-keys */
-
 const possibleProblems = require("../rules/possible-problems.cjs");
 const suggestions = require("../rules/suggestions.cjs");
 const layoutFormatting = require("../rules/layout-formatting.cjs");
@@ -27,12 +25,6 @@ module.exports = {
       env: {
         browser: false,
         node: true
-      }
-    },
-    {
-      files: [".eslintrc.{js,cjs}", "eslint.config.js"],
-      rules: {
-        "sort-keys": "off"
       }
     }
   ]

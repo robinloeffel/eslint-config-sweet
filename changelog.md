@@ -1,5 +1,11 @@
 # changelog
 
+## v16.0.3
+
+_2023-11-21_
+
+- remove native `sort-*` again
+
 ## v16.0.2
 
 _2023-11-21_

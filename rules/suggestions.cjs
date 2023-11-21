@@ -94,9 +94,6 @@ module.exports = {
   "prefer-spread": "error",
   "prefer-template": "error",
   "require-await": "error",
-  "sort-imports": "error",
-  "sort-keys": "error",
-  "sort-vars": "error",
   "symbol-description": "error",
   yoda: "error"
 };
