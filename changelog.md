@@ -1,5 +1,11 @@
 # changelog
 
+## v16.0.1
+
+_2023-11-21_
+
+- include required files in npm package
+
 ## v16.0.0
 
 _2023-11-21_
