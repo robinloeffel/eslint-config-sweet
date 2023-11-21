@@ -1,5 +1,11 @@
 # changelog
 
+## v16.0.2
+
+_2023-11-21_
+
+- remove `no-magic-numbers` again
+
 ## v16.0.1
 
 _2023-11-21_

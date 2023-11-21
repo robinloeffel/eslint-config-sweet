@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sweet",
-  "version": "16.0.1",
+  "version": "16.0.2",
   "description": "ESLint shareable config for the most sweet-ass vanilla JavaScript. 🤙🏼",
   "main": "./configs/javascript.cjs",
   "exports": {
