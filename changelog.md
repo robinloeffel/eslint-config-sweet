@@ -1,6 +1,17 @@
 # changelog
 
+## v16.0.0
+
+_2023-11-21_
+
+- use `prettier` for formatting internally
+- remove all deprecated formatting rules from config
+- remove `eslint-plugin-perfectionist` again (was too disruptive, after all)
+- extend from `eslint:recommended`
+- add native `sort-*` rules
+
 ## v15.0.0
+
 _2023-11-19_
 
 - add `eslint-plugin-deprecation` dependency
@@ -9,11 +20,13 @@ _2023-11-19_
 - add `operator-assignment` rule
 
 ## v14.0.0
+
 _2023-11-09_
 
 - the `strict` ts config was a little too strict
 
 ## v13.0.0
+
 _2023-11-04_
 
 - require at least `node@18`
@@ -26,6 +39,7 @@ _2023-11-04_
 - directly export `typescript` config
 
 ## v12.0.0
+
 _2023-08-23_
 
 - require at least `node@16`
@@ -39,6 +53,7 @@ _2023-08-23_
 - introduce `typescript-typed` config
 
 ## v11.0.1
+
 _2023-03-19_
 
 - clean up dependencies
@@ -46,11 +61,13 @@ _2023-03-19_
 - add type hints in config and rule sets
 
 ## v11.0.0
+
 _2023-03-18_
 
 - Switch to `plugin:unicorn/recommended` for most rules
 
 ## v10.0.0
+
 _2023-03-18_
 
 ### Complete re-write
@@ -68,16 +85,19 @@ _2023-03-18_
 - Drop `sweet/web` entry
 
 ## v9.0.0
+
 _2022-08-30_
 
 - Add `prefer-logical-operator-over-ternary` rule
 
 ## v8.0.1
+
 _2022-01-11_
 
 - Change `no-multiple-empty-lines` rule
 
 ## v8.0.0
+
 _2022-01-09_
 
 - Update `engines` in package.json
@@ -97,6 +117,7 @@ _2022-01-09_
 - Add `unicorn/no-await-expression-member` rule
 
 ## v7.0.0
+
 _2021-11-20_
 
 - Upgrade `eslint-plugin-compat`
@@ -109,6 +130,7 @@ _2021-11-20_
 - Add `unicorn/template-indent` rule
 
 ## v6.0.0
+
 _2021-09-04_
 
 - Upgrade `eslint-plugin-compat`
@@ -126,6 +148,7 @@ _2021-09-04_
 - Add `unicorn/prefer-string-slice` rule
 
 ## v5.0.0
+
 _2021-03-26_
 
 - Upgrade `eslint-plugin-unicorn`
@@ -135,6 +158,7 @@ _2021-03-26_
 - Add `unicorn/prefer-array-index-of` rule
 
 ## v4.0.0
+
 _2021-01-05_
 
 - Update `eslint-plugin-compat`
@@ -148,11 +172,13 @@ _2021-01-05_
 - Refactor `eslin-plugin-unicorn` rule names
 
 ## v3.0.1
+
 _2020-12-01_
 
 - Recognize more config files
 
 ## v3.0.0
+
 _2020-11-30_
 
 - Add `unicorn/prefer-ternary` rule
@@ -160,23 +186,27 @@ _2020-11-30_
 - Make `sweet/web` the default entry (now only `sweet` will do the trick)
 
 ## v2.0.1
+
 _2020-10-11_
 
 - Add `.eslintrc.js` to the array of configs in `web.js`
 
 ## v2.0.0
+
 _2020-09-29_
 
 - **Added:** `unicorn/prefer-array-find`
 - Automatically detect common JS config files and lint them accordingly
 
 ## v1.1.0
+
 _2020-06-07_
 
 - Only enforce array item newlines to be consistent (`array-bracket-newline`)
 - Only enforce object prop newlines to be consistent (`object-curly-newline`)
 
 ## v1.0.0
+
 _2020-06-07_
 
 - **Breaking Change:** Disallow newlines in arrays with less than 3 items (`array-bracket-newline`)
@@ -185,6 +215,7 @@ _2020-06-07_
 - **Breaking Addition:** Disallow existence-checking for the length of array-like objects (`unicorn/explicit-length-check`)
 
 ## v0.6.2
+
 _2020-06-04_
 
 - Upgrade to `eslint-plugin-unicorn@20.x`

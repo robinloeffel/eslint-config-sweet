@@ -20,7 +20,7 @@ As soon as you've installed the config, you can extend from it. To do that, find
 
 ```js
 module.exports = {
-  extends: [ "sweet" ]
+  extends: ["sweet"]
 };
 ```
 
@@ -28,8 +28,8 @@ Or, if TypeScript is your jam:
 
 ```js
 module.exports = {
-  extends: [ "sweet/typescript" ]
-}
+  extends: ["sweet/typescript"]
+};
 ```
 
 ## How will my code look when using this?
