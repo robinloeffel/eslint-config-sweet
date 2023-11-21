@@ -20,7 +20,7 @@ As soon as you've installed the config, you can extend from it. To do that, find
 
 ```js
 module.exports = {
-  extends: ["sweet"]
+  extends: "sweet"
 };
 ```
 
@@ -28,7 +28,7 @@ Or, if TypeScript is your jam:
 
 ```js
 module.exports = {
-  extends: ["sweet/typescript"]
+  extends: "sweet/typescript"
 };
 ```
 
@@ -38,7 +38,9 @@ Sweet, man. That's the point. On a more serious note though: It mostly, of cours
 
 ## Nice to know
 
-For formatting, please go ahead and use [`prettier`](https://prettier.io/), as well as include their [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) as the last item in your `extends` array.
+`sweet` and `sweet/typescript` will clash with your [Prettier](https://prettier.io/) setup, there's no way around it.  This config is using [`@stylistic/eslint-plugin`](https://github.com/eslint-stylistic/eslint-stylistic) for formatting, and [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) turns off ESLint's built-in, but [deprecated](https://eslint.org/docs/latest/rules/#deprecated), formatting rules.
+
+While I generally agree with the different concerns of linters and formatters, Prettier just isn't configurable enough for my liking. And this is by design, as it is meant to be an opinionated, zero-config, drop-in solution with limited options. Until we have a more flexible formatter available, using ESLint in this way seems to be the way to go.
 
 ## License
 

@@ -1,5 +1,12 @@
 # changelog
 
+## v17.0.0
+
+_2023-11-21_
+
+- add `@stylistic/eslint-plugin` for formatting rules (just can't get used to `prettier`)
+- 
+
 ## v16.0.3
 
 _2023-11-21_

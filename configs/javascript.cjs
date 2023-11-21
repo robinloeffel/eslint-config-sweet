@@ -1,6 +1,7 @@
 const possibleProblems = require("../rules/possible-problems.cjs");
 const suggestions = require("../rules/suggestions.cjs");
 const layoutFormatting = require("../rules/layout-formatting.cjs");
+const stylistic = require("../rules/stylistic.cjs");
 
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
@@ -9,6 +10,7 @@ module.exports = {
     browser: true
   },
   reportUnusedDisableDirectives: true,
+  plugins: [ "@stylistic" ],
   extends: [
     "eslint:recommended",
     "plugin:unicorn/recommended",
@@ -17,15 +19,14 @@ module.exports = {
   rules: {
     ...possibleProblems,
     ...suggestions,
-    ...layoutFormatting
+    ...layoutFormatting,
+    ...stylistic
   },
-  overrides: [
-    {
-      files: ["*.config.js", "*.cjs"],
-      env: {
-        browser: false,
-        node: true
-      }
+  overrides: [{
+    files: [ "*.config.js", "*.cjs" ],
+    env: {
+      browser: false,
+      node: true
     }
-  ]
+  }]
 };
