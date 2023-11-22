@@ -1,11 +1,17 @@
 # changelog
 
+## v17.0.1
+
+_2023-11-22_
+
+- remove `@stylistic/lines-between-class-members` rule
+- remove `@stylistic/object-property-newline` rule
+
 ## v17.0.0
 
 _2023-11-21_
 
 - add `@stylistic/eslint-plugin` for formatting rules (just can't get used to `prettier`)
-- 
 
 ## v16.0.3
 
