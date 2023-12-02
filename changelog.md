@@ -1,5 +1,13 @@
 # changelog
 
+## v18.0.0
+
+_2023-12-02_
+
+- add `eslint-plugin-github` dependency and rules
+- add `eslint-plugin-sonarjs` dependency and rules
+- remove `sweet/typescript` entry (always include `ts`)
+
 ## v17.0.1
 
 _2023-11-22_

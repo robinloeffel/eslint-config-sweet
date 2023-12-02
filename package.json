@@ -1,15 +1,8 @@
 {
   "name": "eslint-config-sweet",
-  "version": "17.0.1",
+  "version": "18.0.0",
   "description": "ESLint shareable config for the most sweet-ass vanilla JavaScript. 🤙🏼",
-  "main": "./configs/javascript.cjs",
-  "exports": {
-    ".": "./configs/javascript.cjs",
-    "./typescript": "./configs/typescript.cjs"
-  },
-  "engines": {
-    "node": ">=18"
-  },
+  "main": "./config/sweet.cjs",
   "repository": "https://github.com/robinloeffel/eslint-config-sweet.git",
   "homepage": "https://github.com/robinloeffel/eslint-config-sweet",
   "bugs": "https://github.com/robinloeffel/eslint-config-sweet/issues",
@@ -21,24 +14,25 @@
   ],
   "files": [
     "rules",
-    "configs"
+    "config"
   ],
   "dependencies": {
-    "@stylistic/eslint-plugin": "^1.4.0",
-    "@typescript-eslint/eslint-plugin": "^6.12.0",
-    "@typescript-eslint/parser": "^6.12.0",
+    "@stylistic/eslint-plugin": "^1.4.1",
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/parser": "^6.13.1",
     "eslint-plugin-deprecation": "^2.0.0",
+    "eslint-plugin-github": "^4.10.1",
     "eslint-plugin-jsonc": "^2.10.0",
+    "eslint-plugin-sonarjs": "^0.23.0",
     "eslint-plugin-unicorn": "^49.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
     "@commitlint/types": "^18.4.3",
-    "@types/eslint": "^8.44.7",
-    "eslint": "^8.54.0",
+    "@types/eslint": "^8.44.8",
+    "eslint": "^8.55.0",
     "husky": "^8.0.3",
-    "npm-check-updates": "^16.14.11",
     "typescript": "^5.3.2"
   },
   "peerDependencies": {
@@ -46,6 +40,7 @@
     "typescript": "^4 || ^5"
   },
   "scripts": {
-    "update": "npm-check-updates --interactive --install always && npm update"
+    "update": "npx npm-check-updates@latest --interactive --install always",
+    "postupdate": "npm update"
   }
 }
