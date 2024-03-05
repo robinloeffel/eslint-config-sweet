@@ -24,6 +24,12 @@ module.exports = {
 };
 ```
 
+## Pro Tip for VS Code
+
+To make your experience even better, Microsoft has added a rad feature to VS Code that makes cleaning up `import` and `export` statements a breeze! Go to your user settings via `⌘ + ⇧ + p`, then type `user json`, and hit enter. Add `"source.organizeImports": "always"` to `"editor.codeActionsOnSave"` as seen [here in the VS Code docs](https://code.visualstudio.com/docs/typescript/typescript-refactoring#_code-actions-on-save), and save that bad boy.
+
+Boom, VS Code will now automatically remove unused `import`s and `export`s, as well as sort them for ya! 🤙🏼
+
 ## How will my code look when using this?
 
 Sweet, man. That's the point. On a more serious note though: It mostly, of course, enforces consistency, even though it may not look like it the first few moments. It will make your code feel more lightweight and nudge you towards using more modern APIs and good practices, while maintaining readability and keeping complexity down.

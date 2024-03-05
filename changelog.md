@@ -1,5 +1,13 @@
 # changelog
 
+## v19.0.1
+
+_2024-03-05_
+
+- remove `eslint-plugin-simple-import-sort` in favor of vs code's built-in functionality
+- remove `eslint-plugin-unused-imports` in favor of vs code's built-in functionality
+- tweak `@typescript-eslint/consistent-type-imports` rule
+
 ## v19.0.0
 
 _2024-03-05_

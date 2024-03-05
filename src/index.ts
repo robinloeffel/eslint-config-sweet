@@ -2,10 +2,8 @@ import type { Linter } from "eslint";
 
 import layoutFormatting from "./rules/layout-formatting";
 import github from "./rules/plugins/github";
-import simpleImportSort from "./rules/plugins/simple-import-sort";
 import stylistic from "./rules/plugins/stylistic";
 import typescript from "./rules/plugins/typescript";
-import unusedImports from "./rules/plugins/unused-imports";
 import possibleProblems from "./rules/possible-problems";
 import suggestions from "./rules/suggestions";
 
@@ -17,9 +15,7 @@ export = {
   reportUnusedDisableDirectives: true,
   plugins: [
     "github",
-    "@stylistic",
-    "unused-imports",
-    "simple-import-sort"
+    "@stylistic"
   ],
   extends: [
     "eslint:recommended",
@@ -33,9 +29,7 @@ export = {
     ...suggestions,
     ...layoutFormatting,
     ...github,
-    ...stylistic,
-    ...unusedImports,
-    ...simpleImportSort
+    ...stylistic
   },
   overrides: [{
     files: "*.ts",

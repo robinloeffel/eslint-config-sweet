@@ -26,10 +26,8 @@
     "eslint-plugin-deprecation": "^2.0.0",
     "eslint-plugin-github": "^4.10.2",
     "eslint-plugin-jsonc": "^2.13.0",
-    "eslint-plugin-simple-import-sort": "^12.0.0",
     "eslint-plugin-sonarjs": "^0.24.0",
     "eslint-plugin-unicorn": "^51.0.1",
-    "eslint-plugin-unused-imports": "^3.1.0",
     "eslint-plugin-yml": "^1.12.2"
   },
   "devDependencies": {
@@ -48,6 +46,7 @@
   },
   "scripts": {
     "start": "tsc --project tsconfig.build.json --watch",
-    "prepack": "rm -rf ./dist && tsc --project tsconfig.build.json"
+    "build": "rm -rf ./dist && tsc --project tsconfig.build.json",
+    "prepack": "npm run build"
   }
 }
