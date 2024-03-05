@@ -1,5 +1,11 @@
 # changelog
 
+## v19.0.2
+
+_2024-03-05_
+
+- revert `@typescript-eslint/consistent-type-imports` rule
+
 ## v19.0.1
 
 _2024-03-05_

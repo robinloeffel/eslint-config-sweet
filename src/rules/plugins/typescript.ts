@@ -7,9 +7,7 @@ export = {
   "consistent-return": "off",
   "@typescript-eslint/consistent-return": "error",
   "@typescript-eslint/consistent-type-exports": "error",
-  "@typescript-eslint/consistent-type-imports": [ "error", {
-    prefer: "type-imports"
-  }],
+  "@typescript-eslint/consistent-type-imports": "error",
   "default-param-last": "off",
   "@typescript-eslint/default-param-last": "error",
   "@typescript-eslint/explicit-member-accessibility": "error",
