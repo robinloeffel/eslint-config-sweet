@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sweet",
-  "version": "19.0.0",
+  "version": "19.0.1",
   "description": "ESLint shareable config for the most sweet-ass vanilla JavaScript. 🤙🏼",
   "keywords": [
     "eslint",
