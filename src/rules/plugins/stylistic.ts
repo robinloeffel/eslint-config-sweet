@@ -1,7 +1,7 @@
-// https://eslint.style/packages/default#rules
+import type { Linter } from "eslint";
 
-/** @type {import("eslint").Linter.Config["rules"]} */
-module.exports = {
+// https://eslint.style/rules
+export = {
   "@stylistic/array-bracket-newline": [ "error", "consistent" ],
   "@stylistic/array-bracket-spacing": [ "error", "always", {
     objectsInArrays: false,
@@ -70,4 +70,4 @@ module.exports = {
   // typescript-only
   "@stylistic/member-delimiter-style": "error",
   "@stylistic/type-annotation-spacing": "error"
-};
+} satisfies Linter.Config["rules"];

@@ -1,7 +1,7 @@
-// https://github.com/github/eslint-plugin-github#rules
+import type { Linter } from "eslint";
 
-/** @type {import("eslint").Linter.Config["rules"]} */
-module.exports = {
+// https://github.com/github/eslint-plugin-github
+export = {
   "github/array-foreach": "error",
   "github/async-currenttarget": "error",
   "github/async-preventdefault": "error",
@@ -15,4 +15,4 @@ module.exports = {
   "github/prefer-observers": "error",
   "github/require-passive-events": "error",
   "github/unescaped-html-literal": "error"
-};
+} satisfies Linter.Config["rules"];

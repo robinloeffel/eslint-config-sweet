@@ -1,7 +1,7 @@
-// https://eslint.org/docs/latest/rules/#possible-problems
+import type { Linter } from "eslint";
 
-/** @type {import("eslint").Linter.Config["rules"]} */
-module.exports = {
+// https://eslint.org/docs/latest/rules/#possible-problems
+export = {
   "array-callback-return": "error",
   "no-await-in-loop": "error",
   "no-constant-binary-expression": "error",
@@ -16,4 +16,4 @@ module.exports = {
   "no-unused-private-class-members": "error",
   "no-use-before-define": "error",
   "require-atomic-updates": "error"
-};
+} satisfies Linter.Config["rules"];

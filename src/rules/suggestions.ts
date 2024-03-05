@@ -1,7 +1,7 @@
-// https://eslint.org/docs/latest/rules/#suggestions
+import type { Linter } from "eslint";
 
-/** @type {import("eslint").Linter.Config["rules"]} */
-module.exports = {
+// https://eslint.org/docs/latest/rules/#suggestions
+export = {
   "accessor-pairs": "error",
   "arrow-body-style": "error",
   "block-scoped-var": "error",
@@ -96,4 +96,4 @@ module.exports = {
   "require-await": "error",
   "symbol-description": "error",
   yoda: "error"
-};
+} satisfies Linter.Config["rules"];

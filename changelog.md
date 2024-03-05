@@ -1,5 +1,17 @@
 # changelog
 
+## v19.0.0
+
+_2024-03-05_
+
+- use `@typescript-eslint/strict-type-checked` config
+- add `eslint-plugin-simple-import-sort`
+- add `eslint-plugin-unused-imports`
+- add `eslint-plugin-yml`
+- upgrade `@typescript-eslint/eslint-plugin`
+- upgrade `@typescript-eslint/parser`
+- rewrite everything in typescript
+
 ## v18.0.0
 
 _2023-12-02_

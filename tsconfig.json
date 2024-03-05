@@ -1,16 +1,10 @@
 {
+  "extends": "@tsconfig/strictest/tsconfig.json",
   "compilerOptions": {
     "target": "esnext",
     "module": "commonjs",
     "moduleResolution": "node",
-    "lib": ["esnext"],
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "forceConsistentCasingInFileNames": true,
-    "verbatimModuleSyntax": true,
-    "skipLibCheck": true,
     "moduleDetection": "force",
-    "esModuleInterop": true,
     "noEmit": true
   }
 }
