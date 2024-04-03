@@ -5,6 +5,7 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "moduleDetection": "force",
+    "esModuleInterop": true,
     "noEmit": true
   }
 }
