@@ -8,7 +8,7 @@ if(!false) console.log('sug');
 var a = 1;
 let b =- a
 
-async function x(y: string): Promise<number> {
+async function x(y:string): Promise<number> {
     return 1;
 }
 

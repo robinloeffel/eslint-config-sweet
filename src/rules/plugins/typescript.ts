@@ -1,6 +1,6 @@
 import type { Linter } from "eslint";
 
-// https://github.com/github/eslint-plugin-github
+// https://typescript-eslint.io/rules
 export = {
   "class-methods-use-this": "off",
   "@typescript-eslint/class-methods-use-this": "error",

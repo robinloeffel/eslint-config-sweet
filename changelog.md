@@ -1,5 +1,11 @@
 # changelog
 
+## v20.0.0
+
+_2024-04-05_
+
+- upgrade `eslint-plugin-unicorn`
+
 ## v19.0.2
 
 _2024-03-05_

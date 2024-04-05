@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sweet",
-  "version": "19.0.2",
+  "version": "20.0.0",
   "description": "ESLint shareable config for the most sweet-ass vanilla JavaScript. 🤙🏼",
   "keywords": [
     "eslint",
@@ -26,8 +26,8 @@
     "eslint-plugin-deprecation": "^2.0.0",
     "eslint-plugin-github": "^4.10.2",
     "eslint-plugin-jsonc": "^2.15.0",
-    "eslint-plugin-sonarjs": "^0.25.0",
-    "eslint-plugin-unicorn": "^51.0.1",
+    "eslint-plugin-sonarjs": "^0.25.1",
+    "eslint-plugin-unicorn": "^52.0.0",
     "eslint-plugin-yml": "^1.14.0"
   },
   "devDependencies": {
@@ -36,17 +36,18 @@
     "@commitlint/types": "^19.0.3",
     "@tsconfig/strictest": "^2.0.5",
     "@types/eslint": "^8.56.7",
+    "concurrently": "^8.2.2",
     "eslint": "^8.57.0",
     "husky": "^9.0.11",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.4",
+    "vitest": "^1.4.0"
   },
   "peerDependencies": {
     "eslint": "^8",
     "typescript": "^4 || ^5"
   },
   "scripts": {
-    "start": "tsc --project tsconfig.build.json --watch",
-    "build": "rm -rf ./dist && tsc --project tsconfig.build.json",
-    "prepack": "npm run build"
+    "start": "concurrently 'tsc -p tsconfig.build.json -w' 'vitest'",
+    "prepack": "rm -rf dist && tsc -p tsconfig.build.json"
   }
 }
