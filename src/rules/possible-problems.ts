@@ -1,5 +1,3 @@
-import type { Linter } from "eslint";
-
 // https://eslint.org/docs/latest/rules/#possible-problems
 export = {
   "array-callback-return": "error",
@@ -16,4 +14,4 @@ export = {
   "no-unused-private-class-members": "error",
   "no-use-before-define": "error",
   "require-atomic-updates": "error"
-} satisfies Linter.Config["rules"];
+} satisfies ESLintConfig["rules"];

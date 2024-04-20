@@ -1,5 +1,3 @@
-import type { Linter } from "eslint";
-
 // https://typescript-eslint.io/rules
 export = {
   "class-methods-use-this": "off",
@@ -33,4 +31,4 @@ export = {
   "@typescript-eslint/promise-function-async": "error",
   "@typescript-eslint/require-array-sort-compare": "error",
   "@typescript-eslint/sort-type-constituents": "error"
-} satisfies Linter.Config["rules"];
+} satisfies ESLintConfig["rules"];

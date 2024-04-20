@@ -1,5 +1,3 @@
-import type { Linter } from "eslint";
-
 // https://github.com/github/eslint-plugin-github
 export = {
   "github/array-foreach": "error",
@@ -15,4 +13,4 @@ export = {
   "github/prefer-observers": "error",
   "github/require-passive-events": "error",
   "github/unescaped-html-literal": "error"
-} satisfies Linter.Config["rules"];
+} satisfies ESLintConfig["rules"];

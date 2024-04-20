@@ -1,5 +1,3 @@
-import type { Linter } from "eslint";
-
 // https://eslint.org/docs/latest/rules/#suggestions
 export = {
   "accessor-pairs": "error",
@@ -96,4 +94,4 @@ export = {
   "require-await": "error",
   "symbol-description": "error",
   yoda: "error"
-} satisfies Linter.Config["rules"];
+} satisfies ESLintConfig["rules"];

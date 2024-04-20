@@ -1,5 +1,3 @@
-import type { Linter } from "eslint";
-
 import layoutFormatting from "./rules/layout-formatting";
 import github from "./rules/plugins/github";
 import stylistic from "./rules/plugins/stylistic";
@@ -51,4 +49,4 @@ export = {
       node: true
     }
   }]
-} satisfies Linter.Config;
+} satisfies ESLintConfig;

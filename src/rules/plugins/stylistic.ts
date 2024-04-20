@@ -1,5 +1,3 @@
-import type { Linter } from "eslint";
-
 // https://eslint.style/rules
 export = {
   "@stylistic/array-bracket-newline": [ "error", "consistent" ],
@@ -70,4 +68,4 @@ export = {
   // typescript-only
   "@stylistic/member-delimiter-style": "error",
   "@stylistic/type-annotation-spacing": "error"
-} satisfies Linter.Config["rules"];
+} satisfies ESLintConfig["rules"];
