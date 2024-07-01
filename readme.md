@@ -6,7 +6,7 @@
 [![typescript peer dependency](https://img.shields.io/npm/dependency-version/eslint-config-sweet/peer/typescript?label=typescript%20peer%20dep)](https://github.com/microsoft/typescript)
 [![package license](https://img.shields.io/npm/l/eslint-config-sweet)](license)
 
-> ESLint [shareable config](https://eslint.org/docs/developer-guide/shareable-configs.html) for the most sweet-ass vanilla JavaScript. 🤙🏼
+> ESLint [shareable config](https://eslint.org/docs/developer-guide/shareable-configs.html) for the most sweet-ass JavaScript and TypeScript. 🤙🏼
 
 ## Installation
 

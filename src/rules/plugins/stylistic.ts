@@ -68,4 +68,4 @@ export = {
   // typescript-only
   "@stylistic/member-delimiter-style": "error",
   "@stylistic/type-annotation-spacing": "error"
-} satisfies ESLintConfig["rules"];
+} satisfies ESLintRules;

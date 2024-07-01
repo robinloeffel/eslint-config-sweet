@@ -4,6 +4,9 @@ export = {
   "@typescript-eslint/class-methods-use-this": "error",
   "consistent-return": "off",
   "@typescript-eslint/consistent-return": "error",
+  "@typescript-eslint/consistent-type-assertions": [ "error", {
+    assertionStyle: "never"
+  }],
   "@typescript-eslint/consistent-type-exports": "error",
   "@typescript-eslint/consistent-type-imports": "error",
   "default-param-last": "off",
@@ -31,4 +34,4 @@ export = {
   "@typescript-eslint/promise-function-async": "error",
   "@typescript-eslint/require-array-sort-compare": "error",
   "@typescript-eslint/sort-type-constituents": "error"
-} satisfies ESLintConfig["rules"];
+} satisfies ESLintRules;

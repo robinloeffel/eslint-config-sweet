@@ -13,12 +13,13 @@ export = {
   reportUnusedDisableDirectives: true,
   plugins: [
     "github",
+    "sonarjs",
     "@stylistic"
   ],
   extends: [
     "eslint:recommended",
     "plugin:unicorn/recommended",
-    "plugin:sonarjs/recommended",
+    "plugin:sonarjs/recommended-legacy",
     "plugin:jsonc/recommended-with-json",
     "plugin:yml/standard"
   ],
@@ -30,14 +31,24 @@ export = {
     ...stylistic
   },
   overrides: [{
-    files: "*.ts",
+    files: [
+      "*.ts",
+      "*.vue",
+      "*.svelte",
+      "*.astro"
+    ],
     extends: [
       "plugin:@typescript-eslint/strict-type-checked",
       "plugin:@typescript-eslint/stylistic-type-checked",
       "plugin:deprecation/recommended"
     ],
     parserOptions: {
-      project: true
+      project: true,
+      extraFileExtensions: [
+        ".vue",
+        ".svelte",
+        ".astro"
+      ]
     },
     rules: {
       ...typescript

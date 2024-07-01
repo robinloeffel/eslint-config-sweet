@@ -94,4 +94,4 @@ export = {
   "require-await": "error",
   "symbol-description": "error",
   yoda: "error"
-} satisfies ESLintConfig["rules"];
+} satisfies ESLintRules;

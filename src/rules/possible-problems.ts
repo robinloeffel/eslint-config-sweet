@@ -14,4 +14,4 @@ export = {
   "no-unused-private-class-members": "error",
   "no-use-before-define": "error",
   "require-atomic-updates": "error"
-} satisfies ESLintConfig["rules"];
+} satisfies ESLintRules;

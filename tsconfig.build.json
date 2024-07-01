@@ -1,6 +1,9 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "verbatimModuleSyntax": false,
     "noEmit": false,
     "outDir": "dist"
   },

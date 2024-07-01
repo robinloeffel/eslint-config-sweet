@@ -1,6 +1,6 @@
 {
   "editor.codeActionsOnSave": {
     // prevent eslint autofixing
-    "source.fixAll.eslint": "never"
+    // "source.fixAll.eslint": "never"
   }
 }

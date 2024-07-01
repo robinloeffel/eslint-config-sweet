@@ -13,4 +13,4 @@ export = {
   "github/prefer-observers": "error",
   "github/require-passive-events": "error",
   "github/unescaped-html-literal": "error"
-} satisfies ESLintConfig["rules"];
+} satisfies ESLintRules;

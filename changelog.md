@@ -1,5 +1,19 @@
 # changelog
 
+## v21.0.0
+
+_2024-07-01_
+
+- this will be the last release supporting `eslint@8`
+- upgrade `@stylistic/eslint-plugin`
+- upgrade `eslint-plugin-deprecation`
+- upgrade `eslint-plugin-github`
+- upgrade `eslint-plugin-sonarjs`
+- upgrade `eslint-plugin-unicorn`
+- add rule `@typescript-eslint/consistent-type-assertions`
+- add `extraFileExtensions` to typescript `parserOptions`
+- run typescript rules on `vue`, `svelte` and `astro` files
+
 ## v20.0.0
 
 _2024-04-05_
