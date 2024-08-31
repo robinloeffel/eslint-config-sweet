@@ -5,7 +5,7 @@ const strins = ['a', 'b', 'c'];
 if(!false) console.log('sug');
 if(!false) console.log('sug');
 
-var a = 1;
+var a: Array<number> = 1;
 let b =- a
 
 async function x(y:string): Promise<number> {

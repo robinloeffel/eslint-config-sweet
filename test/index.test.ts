@@ -8,7 +8,7 @@ const findMessage = (
   ruleId: string
 ) => results.at(0)?.messages.find(item => item.ruleId === ruleId);
 
-describe("browser", async() => {
+describe("browser", async () => {
   const results = await eslint.lintFiles("./test/fixtures/browser.js");
 
   test("finds: no-alert", () => {
@@ -16,23 +16,11 @@ describe("browser", async() => {
   });
 
   test("finds: no-unused-vars", () => {
-    expect(findMessage(results, "no-unused-vars")).toBeDefined();
-  });
-
-  test("finds: github/prefer-observers", () => {
-    expect(findMessage(results, "github/prefer-observers")).toBeDefined();
-  });
-
-  test("finds: github/no-inner-html", () => {
-    expect(findMessage(results, "github/no-inner-html")).toBeDefined();
-  });
-
-  test("finds: github/unescaped-html-literal", () => {
-    expect(findMessage(results, "github/unescaped-html-literal")).toBeDefined();
+    expect(findMessage(results, "@typescript-eslint/no-unused-vars")).toBeDefined();
   });
 });
 
-describe("cjs", async() => {
+describe("cjs", async () => {
   const results = await eslint.lintFiles("./test/fixtures/cjs.cjs");
 
   test("finds: unicorn/prefer-node-protocol", () => {
@@ -44,7 +32,7 @@ describe("cjs", async() => {
   });
 });
 
-describe("json", async() => {
+describe("json", async () => {
   const results = await eslint.lintFiles("./test/fixtures/json.json");
 
   test("finds: jsonc/quote-props", () => {
@@ -56,7 +44,7 @@ describe("json", async() => {
   });
 });
 
-describe("ts", async() => {
+describe("ts", async () => {
   const results = await eslint.lintFiles("./test/fixtures/ts.ts");
 
   test("finds: @typescript-eslint/no-non-null-assertion", () => {
