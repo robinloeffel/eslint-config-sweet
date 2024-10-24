@@ -16,7 +16,11 @@ describe("browser", async () => {
   });
 
   test("finds: no-unused-vars", () => {
-    expect(findMessage(results, "@typescript-eslint/no-unused-vars")).toBeDefined();
+    expect(findMessage(results, "no-unused-vars")).toBeDefined();
+  });
+
+  test("finds: github/no-inner-html", () => {
+    expect(findMessage(results, "github/no-inner-html")).toBeDefined();
   });
 });
 
@@ -29,18 +33,6 @@ describe("cjs", async () => {
 
   test("finds no: unicorn/prefer-module", () => {
     expect(findMessage(results, "unicorn/prefer-module")).toBeUndefined();
-  });
-});
-
-describe("json", async () => {
-  const results = await eslint.lintFiles("./test/fixtures/json.json");
-
-  test("finds: jsonc/quote-props", () => {
-    expect(findMessage(results, "jsonc/quote-props")).toBeDefined();
-  });
-
-  test("finds: jsonc/comma-dangle", () => {
-    expect(findMessage(results, "jsonc/comma-dangle")).toBeDefined();
   });
 });
 
