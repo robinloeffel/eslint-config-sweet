@@ -18,11 +18,6 @@ export default tsEslint.config({
   name: "global options",
   linterOptions: {
     reportUnusedDisableDirectives: "error"
-  },
-  languageOptions: {
-    parserOptions: {
-      projectService: true
-    }
   }
 }, {
   name: "vanilla",
@@ -158,7 +153,16 @@ export default tsEslint.config({
   }
 }, {
   name: "typescript",
-  files: ["**/*.{ts,mts,cts}"],
+  files: [
+    "**/*.{ts,mts,cts}",
+    "**/*.{svelte,vue,astro}"
+  ],
+  languageOptions: {
+    parserOptions: {
+      projectService: true,
+      extraFileExtensions: [".svelte", ".vue", ".astro"]
+    }
+  },
   extends: [
     ...tsEslint.configs.strictTypeChecked,
     ...tsEslint.configs.stylisticTypeChecked

@@ -13,14 +13,11 @@
     "url": "git+https://github.com/robinloeffel/eslint-config-sweet.git"
   },
   "license": "MIT",
-  "author": "Robin Löffel (https://robinloeffel.ch) <hi@robinloeffel.ch>",
+  "author": "Robin Löffel",
   "type": "module",
   "main": "eslint.config.js",
-  "files": [
-    "dist",
-    "src"
-  ],
   "scripts": {
+    "inspect": "npx @eslint/config-inspector@latest",
     "start": "vitest"
   },
   "dependencies": {
@@ -34,7 +31,6 @@
   "devDependencies": {
     "@types/eslint__js": "^8.42.3",
     "eslint": "^9.13.0",
-    "robins-tsconfig": "^1.0.0",
     "typescript": "^5.6.3",
     "vitest": "^2.1.3"
   },

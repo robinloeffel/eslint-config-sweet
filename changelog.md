@@ -1,5 +1,15 @@
 # changelog
 
+## v22.0.0
+
+_2024-10-26_
+
+- move to flat config format
+- drop `eslint-plugin-deprecation`
+- drop `eslint-plugin-sonarjs`
+- drop `eslint-plugin-yml`
+- drop `eslint-plugin-jsonc`
+
 ## v21.0.0
 
 _2024-07-01_

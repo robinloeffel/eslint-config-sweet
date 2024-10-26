@@ -11,22 +11,22 @@
 ## Installation
 
 ```console
-yarn add eslint-config-sweet eslint typescript --dev
+npm i -D eslint-config-sweet eslint typescript
 ```
 
 ## Usage
 
-As soon as you've installed the config, you can extend from it. To do that, find your [config](https://eslint.org/docs/user-guide/configuring#extending-configuration-files) and add the following line:
+To use the package, follow the ESLint docs about [integrating shareable configs](https://eslint.org/docs/latest/use/configure/configuration-files#using-a-shareable-configuration-package).
 
 ```js
-module.exports = {
-  extends: "sweet"
-};
+import sweet from "eslint-config-sweet";
+
+export default [ sweet ];
 ```
 
 ## Pro Tip for VS Code
 
-To make your experience even better, Microsoft has added a rad feature to VS Code that makes cleaning up `import` and `export` statements a breeze! Go to your user settings via `⌘ + ⇧ + p`, then type `user json`, and hit enter. Add `"source.organizeImports": "always"` to `"editor.codeActionsOnSave"` as seen [here in the VS Code docs](https://code.visualstudio.com/docs/typescript/typescript-refactoring#_code-actions-on-save), and save that bad boy.
+To make your experience even better, Microsoft has added a rad feature to VS Code that makes cleaning up `import` and `export` statements a breeze! Go to your user settings via `⌘ + ⇧ + p`, then type `user json`, and hit enter. Add `"source.organizeImports": "explicit"` to `"editor.codeActionsOnSave"` as seen [here in the VS Code docs](https://code.visualstudio.com/docs/typescript/typescript-refactoring#_code-actions-on-save), and save that bad boy.
 
 Boom, VS Code will now automatically remove unused `import`s and `export`s, as well as sort them for ya! 🤙🏼
 
