@@ -1,5 +1,9 @@
 # changelog
 
+## v22.1.1
+
+- directly use return type of `config` helper as default export type
+
 ## v22.1.0
 
 _2024-12-18_
