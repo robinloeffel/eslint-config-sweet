@@ -1,3 +1,4 @@
+import { fixupPluginRules } from "@eslint/compat";
 import eslint from "@eslint/js";
 import stylistic from "@stylistic/eslint-plugin";
 import github from "eslint-plugin-github";
@@ -28,7 +29,9 @@ export default tsEslint.config(
         commaDangle: "never"
       })
     ],
-    plugins: { github },
+    plugins: {
+      github: fixupPluginRules(github)
+    },
     rules: {
       // possible problems
       "array-callback-return": "error",

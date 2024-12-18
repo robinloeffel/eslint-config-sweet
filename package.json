@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sweet",
-  "version": "22.1.1",
+  "version": "22.1.2",
   "description": "ESLint shareable config for the most sweet-ass JavaScript and TypeScript. 🤙🏼",
   "keywords": [
     "eslint",
@@ -30,6 +30,7 @@
     "start": "vitest"
   },
   "dependencies": {
+    "@eslint/compat": "^1.2.4",
     "@eslint/js": "^9.17.0",
     "@stylistic/eslint-plugin": "^2.12.1",
     "eslint-plugin-github": "^5.1.4",

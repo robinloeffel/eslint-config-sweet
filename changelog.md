@@ -1,6 +1,14 @@
 # changelog
 
+## v22.1.2
+
+_2024-12-18_
+
+- `@eslint/compat` is still necessary, see <https://github.com/github/eslint-plugin-github/issues/589>
+
 ## v22.1.1
+
+_2024-12-18_
 
 - directly use return type of `config` helper as default export type
 
