@@ -21,7 +21,7 @@ To use the package, follow the ESLint docs about [integrating shareable configs]
 ```js
 import sweet from "eslint-config-sweet";
 
-export default [ sweet ];
+export default [sweet];
 ```
 
 ## Pro Tip for VS Code
@@ -36,7 +36,7 @@ Sweet, man. That's the point. On a more serious note though: It mostly, of cours
 
 ## Nice to know
 
-`sweet` will clash with your [Prettier](https://prettier.io/) setup, there's no way around it.  This config is using [`@stylistic/eslint-plugin`](https://github.com/eslint-stylistic/eslint-stylistic) for formatting, and [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) turns off ESLint's built-in, but [deprecated](https://eslint.org/docs/latest/rules/#deprecated), formatting rules.
+`sweet` will clash with your [Prettier](https://prettier.io/) setup, there's no way around it. This config is using [`@stylistic/eslint-plugin`](https://github.com/eslint-stylistic/eslint-stylistic) for formatting, and [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) turns off ESLint's built-in, but [deprecated](https://eslint.org/docs/latest/rules/#deprecated), formatting rules.
 
 While I generally agree with the different concerns of linters and formatters, Prettier just isn't configurable enough for my liking. And this is by design, as it is meant to be an opinionated, zero-config, drop-in solution with limited options. Until we have a more flexible formatter available, using ESLint in this way seems to be the way to go.
 

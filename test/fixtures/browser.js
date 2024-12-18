@@ -1,6 +1,7 @@
 
 const array = [ 1, 2, 3, 4 ].map(async number => {
     const string = "string";
+    let suh = window.document.body.dataset.suh;
 
     console
         .log({ number,
