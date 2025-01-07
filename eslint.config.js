@@ -1,4 +1,3 @@
-import { fixupPluginRules } from "@eslint/compat";
 import eslint from "@eslint/js";
 import stylistic from "@stylistic/eslint-plugin";
 import github from "eslint-plugin-github";
@@ -30,7 +29,7 @@ export default tsEslint.config(
       })
     ],
     plugins: {
-      github: fixupPluginRules(github)
+      github
     },
     rules: {
       // possible problems

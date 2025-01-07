@@ -1,5 +1,12 @@
 # changelog
 
+## v22.1.3
+
+_2025-01-07_
+
+- update dependencies
+- drop `@eslint/compat`
+
 ## v22.1.2
 
 _2024-12-18_
