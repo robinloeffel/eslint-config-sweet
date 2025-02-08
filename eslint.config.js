@@ -203,8 +203,7 @@ export default tsEslint.config(
       "unicorn/no-null": "off",
 
       // sonarjs
-      "sonarjs/shorthand-property-grouping": "error",
-      "sonarjs/no-implicit-dependencies": "error"
+      "sonarjs/shorthand-property-grouping": "error"
     }
   },
   {

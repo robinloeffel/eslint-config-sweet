@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sweet",
-  "version": "23.0.0",
+  "version": "23.0.1",
   "description": "ESLint shareable config for the most sweet-ass JavaScript and TypeScript. 🤙🏼",
   "keywords": [
     "eslint",

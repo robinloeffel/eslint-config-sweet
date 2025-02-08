@@ -1,5 +1,11 @@
 # changelog
 
+## v23.0.1
+
+_2025-02-08_
+
+- remove `sonarjs/no-implicit-dependencies` rule
+
 ## v23.0.0
 
 _2025-02-08_
