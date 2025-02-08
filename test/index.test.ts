@@ -12,15 +12,18 @@ describe("browser", async () => {
   const results = await eslint.lintFiles("./test/fixtures/browser.js");
 
   test("finds: no-alert", () => {
-    expect(findMessage(results, "no-alert")).toBeDefined();
+    expect(findMessage(results, "no-alert"))
+      .toBeDefined();
   });
 
   test("finds: no-unused-vars", () => {
-    expect(findMessage(results, "no-unused-vars")).toBeDefined();
+    expect(findMessage(results, "no-unused-vars"))
+      .toBeDefined();
   });
 
   test("finds: github/no-inner-html", () => {
-    expect(findMessage(results, "github/no-inner-html")).toBeDefined();
+    expect(findMessage(results, "github/no-inner-html"))
+      .toBeDefined();
   });
 });
 
@@ -28,11 +31,13 @@ describe("cjs", async () => {
   const results = await eslint.lintFiles("./test/fixtures/cjs.cjs");
 
   test("finds: unicorn/prefer-node-protocol", () => {
-    expect(findMessage(results, "unicorn/prefer-node-protocol")).toBeDefined();
+    expect(findMessage(results, "unicorn/prefer-node-protocol"))
+      .toBeDefined();
   });
 
   test("finds no: unicorn/prefer-module", () => {
-    expect(findMessage(results, "unicorn/prefer-module")).toBeUndefined();
+    expect(findMessage(results, "unicorn/prefer-module"))
+      .toBeUndefined();
   });
 });
 
@@ -40,18 +45,22 @@ describe("ts", async () => {
   const results = await eslint.lintFiles("./test/fixtures/ts.ts");
 
   test("finds: @typescript-eslint/no-non-null-assertion", () => {
-    expect(findMessage(results, "@typescript-eslint/no-non-null-assertion")).toBeDefined();
+    expect(findMessage(results, "@typescript-eslint/no-non-null-assertion"))
+      .toBeDefined();
   });
 
   test("finds: @typescript-eslint/no-unused-vars", () => {
-    expect(findMessage(results, "@typescript-eslint/no-unused-vars")).toBeDefined();
+    expect(findMessage(results, "@typescript-eslint/no-unused-vars"))
+      .toBeDefined();
   });
 
   test("finds: @stylistic/type-annotation-spacing", () => {
-    expect(findMessage(results, "@stylistic/type-annotation-spacing")).toBeDefined();
+    expect(findMessage(results, "@stylistic/type-annotation-spacing"))
+      .toBeDefined();
   });
 
   test("finds no: no-unused-vars", () => {
-    expect(findMessage(results, "no-unused-vars")).toBeUndefined();
+    expect(findMessage(results, "no-unused-vars"))
+      .toBeUndefined();
   });
 });

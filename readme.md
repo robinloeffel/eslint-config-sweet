@@ -21,7 +21,7 @@ To use the package, follow the ESLint docs about [integrating shareable configs]
 ```js
 import sweet from "eslint-config-sweet";
 
-export default [sweet];
+export default sweet;
 ```
 
 ## Pro Tip for VS Code

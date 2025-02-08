@@ -1,5 +1,14 @@
 # changelog
 
+## v23.0.0
+
+_2025-02-08_
+
+- update dependencies
+- update a bunch of rules
+- re-introduce `eslint-plugin-sonarjs`
+- add new `reportUnusedInlineConfigs` config
+
 ## v22.1.3
 
 _2025-01-07_

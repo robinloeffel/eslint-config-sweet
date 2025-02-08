@@ -1,18 +1,26 @@
 import eslint from "@eslint/js";
 import stylistic from "@stylistic/eslint-plugin";
 import github from "eslint-plugin-github";
+import sonarjs from "eslint-plugin-sonarjs";
 import unicorn from "eslint-plugin-unicorn";
 import tsEslint from "typescript-eslint";
 
 export default tsEslint.config(
   {
     name: "global ignores",
-    ignores: ["**/dist/", "**/build/", "**/out/", "**/public/", "**/.*/"]
+    ignores: [
+      "**/dist/",
+      "**/build/",
+      "**/out/",
+      "**/public/",
+      "**/.*/"
+    ]
   },
   {
     name: "global options",
     linterOptions: {
-      reportUnusedDisableDirectives: "error"
+      reportUnusedDisableDirectives: "error",
+      reportUnusedInlineConfigs: "error"
     }
   },
   {
@@ -20,6 +28,7 @@ export default tsEslint.config(
     extends: [
       eslint.configs.recommended,
       unicorn.configs["flat/recommended"],
+      sonarjs.configs.recommended,
       stylistic.configs.customize({
         flat: true,
         quotes: "double",
@@ -43,6 +52,7 @@ export default tsEslint.config(
       "no-template-curly-in-string": "error",
       "no-unmodified-loop-condition": "error",
       "no-unreachable-loop": "error",
+      "no-use-before-define": "error",
       "no-useless-assignment": "error",
       "require-atomic-updates": "error",
 
@@ -51,17 +61,27 @@ export default tsEslint.config(
       "arrow-body-style": "error",
       "block-scoped-var": "error",
       "camelcase": "error",
+      "class-methods-use-this": "error",
+      "complexity": "error",
       "consistent-return": "error",
       "consistent-this": "error",
       "curly": "error",
       "default-case": "error",
       "default-case-last": "error",
+      "default-param-last": "error",
       "dot-notation": "error",
       "eqeqeq": "error",
       "func-style": "error",
       "grouped-accessor-pairs": "error",
       "guard-for-in": "error",
+      "init-declarations": "error",
       "logical-assignment-operators": "error",
+      "max-classes-per-file": "error",
+      "max-depth": "error",
+      "max-lines-per-function": "error",
+      "max-nested-callbacks": "error",
+      "max-params": "error",
+      "max-statements": "error",
       "new-cap": "error",
       "no-alert": "error",
       "no-array-constructor": "error",
@@ -87,6 +107,7 @@ export default tsEslint.config(
       "no-labels": "error",
       "no-lone-blocks": "error",
       "no-lonely-if": "error",
+      "no-loop-func": "error",
       "no-multi-assign": "error",
       "no-multi-str": "error",
       "no-negated-condition": "error",
@@ -102,6 +123,7 @@ export default tsEslint.config(
       "no-return-assign": "error",
       "no-script-url": "error",
       "no-sequences": "error",
+      "no-shadow": "error",
       "no-throw-literal": "error",
       "no-undef-init": "error",
       "no-undefined": "error",
@@ -116,9 +138,14 @@ export default tsEslint.config(
       "no-useless-return": "error",
       "no-var": "error",
       "object-shorthand": "error",
+      "one-var": [
+        "error",
+        "never"
+      ],
       "operator-assignment": "error",
       "prefer-arrow-callback": "error",
       "prefer-const": "error",
+      "prefer-destructuring": "error",
       "prefer-exponentiation-operator": "error",
       "prefer-named-capture-group": "error",
       "prefer-object-has-own": "error",
@@ -138,7 +165,6 @@ export default tsEslint.config(
       "github/async-preventdefault": "error",
       "github/get-attribute": "error",
       "github/no-blur": "error",
-      "github/no-dataset": "error",
       "github/no-dynamic-script-tag": "error",
       "github/no-implicit-buggy-globals": "error",
       "github/no-inner-html": "error",
@@ -147,16 +173,54 @@ export default tsEslint.config(
       "github/no-useless-passive": "error",
       "github/prefer-observers": "error",
       "github/require-passive-events": "error",
-      "github/unescaped-html-literal": "error"
+      "github/unescaped-html-literal": "error",
+
+      // stylistic
+      "@stylistic/array-element-newline": [
+        "error",
+        "consistent"
+      ],
+      "@stylistic/array-bracket-newline": "error",
+      "@stylistic/curly-newline": [
+        "error",
+        "always"
+      ],
+      "@stylistic/line-comment-position": "error",
+      "@stylistic/lines-around-comment": "error",
+      "@stylistic/multiline-comment-style": "error",
+      "@stylistic/newline-per-chained-call": [
+        "error",
+        {
+          ignoreChainWithDepth: 1
+        }
+      ],
+      "@stylistic/no-confusing-arrow": "error",
+      "@stylistic/no-extra-semi": "error",
+
+      // unicorn
+      "unicorn/better-regex": "error",
+      "unicorn/consistent-destructuring": "error",
+      "unicorn/no-null": "off",
+
+      // sonarjs
+      "sonarjs/shorthand-property-grouping": "error",
+      "sonarjs/no-implicit-dependencies": "error"
     }
   },
   {
     name: "typescript",
-    files: ["**/*.{ts,mts,cts}", "**/*.{svelte,vue,astro}"],
+    files: [
+      "**/*.{ts,mts,cts}",
+      "**/*.{svelte,vue,astro}"
+    ],
     languageOptions: {
       parserOptions: {
         projectService: true,
-        extraFileExtensions: [".svelte", ".vue", ".astro"]
+        extraFileExtensions: [
+          ".svelte",
+          ".vue",
+          ".astro"
+        ]
       }
     },
     extends: [
@@ -164,6 +228,7 @@ export default tsEslint.config(
       ...tsEslint.configs.stylisticTypeChecked
     ],
     rules: {
+      "class-methods-use-this": "off",
       "@typescript-eslint/class-methods-use-this": "error",
       "@typescript-eslint/consistent-type-assertions": [
         "error",
@@ -178,17 +243,25 @@ export default tsEslint.config(
           fixStyle: "inline-type-imports"
         }
       ],
+      "default-param-last": "off",
       "@typescript-eslint/default-param-last": "error",
       "@typescript-eslint/explicit-member-accessibility": "error",
+      "init-declarations": "off",
       "@typescript-eslint/init-declarations": "error",
+      "max-params": "off",
+      "@typescript-eslint/max-params": "error",
       "@typescript-eslint/method-signature-style": "error",
       "@typescript-eslint/no-import-type-side-effects": "error",
+      "no-loop-func": "off",
       "@typescript-eslint/no-loop-func": "error",
+      "no-shadow": "off",
       "@typescript-eslint/no-shadow": "error",
       "@typescript-eslint/no-unnecessary-parameter-property-assignment": "error",
       "@typescript-eslint/no-unnecessary-qualifier": "error",
+      "no-use-before-define": "off",
       "@typescript-eslint/no-use-before-define": "error",
       "@typescript-eslint/no-useless-empty-export": "error",
+      "prefer-destructuring": "off",
       "@typescript-eslint/prefer-destructuring": "error",
       "@typescript-eslint/prefer-enum-initializers": "error",
       "@typescript-eslint/prefer-readonly": "error",
