@@ -1,5 +1,11 @@
 # changelog
 
+## v23.0.2
+
+_2025-02-16_
+
+- update `typescritp-eslint` to recognize `reportUnusedInlineConfigs` in typings
+
 ## v23.0.1
 
 _2025-02-08_
