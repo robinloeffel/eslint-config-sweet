@@ -188,18 +188,14 @@ export default tsEslint.config(
       "@stylistic/line-comment-position": "error",
       "@stylistic/lines-around-comment": "error",
       "@stylistic/multiline-comment-style": "error",
-      "@stylistic/newline-per-chained-call": [
-        "error",
-        {
-          ignoreChainWithDepth: 1
-        }
-      ],
+      "@stylistic/newline-per-chained-call": "error",
       "@stylistic/no-confusing-arrow": "error",
       "@stylistic/no-extra-semi": "error",
 
       // unicorn
       "unicorn/better-regex": "error",
       "unicorn/consistent-destructuring": "error",
+      "unicorn/no-named-default": "off",
       "unicorn/no-null": "off",
 
       // sonarjs

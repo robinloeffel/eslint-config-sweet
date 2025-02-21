@@ -1,10 +1,17 @@
 # changelog
 
+## v24.0.0
+
+_2025-02-21_
+
+- update dependencies
+- walk back on `@stylistic/newline-per-chained-call`
+
 ## v23.0.2
 
 _2025-02-16_
 
-- update `typescritp-eslint` to recognize `reportUnusedInlineConfigs` in typings
+- update `typescript-eslint` to recognize `reportUnusedInlineConfigs` in typings
 
 ## v23.0.1
 
