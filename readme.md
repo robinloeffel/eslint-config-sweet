@@ -19,9 +19,10 @@ npm i -D eslint-config-sweet eslint typescript
 To use the package, follow the ESLint docs about [integrating shareable configs](https://eslint.org/docs/latest/use/configure/configuration-files#using-a-shareable-configuration-package).
 
 ```js
+import { defineConfig } from "eslint";
 import sweet from "eslint-config-sweet";
 
-export default sweet;
+export default defineConfig(sweet);
 ```
 
 ## Pro Tip for VS Code

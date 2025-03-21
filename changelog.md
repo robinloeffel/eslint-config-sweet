@@ -1,5 +1,11 @@
 # changelog
 
+## v25.0.0
+
+_2025-03-21_
+
+- update `eslint-plugin-github` to v6
+
 ## v24.0.0
 
 _2025-02-21_
