@@ -1,11 +1,11 @@
-import eslint from "@eslint/js";
+import js from "@eslint/js";
 import stylistic from "@stylistic/eslint-plugin";
 import github from "eslint-plugin-github";
 import sonarjs from "eslint-plugin-sonarjs";
 import unicorn from "eslint-plugin-unicorn";
-import tsEslint from "typescript-eslint";
+import ts from "typescript-eslint";
 
-export default tsEslint.config(
+export default ts.config(
   {
     name: "global ignores",
     ignores: [
@@ -26,13 +26,12 @@ export default tsEslint.config(
   {
     name: "vanilla",
     extends: [
-      eslint.configs.recommended,
-      unicorn.configs["flat/recommended"],
+      js.configs.recommended,
+      unicorn.configs.recommended,
       sonarjs.configs.recommended,
       stylistic.configs.customize({
-        flat: true,
-        quotes: "double",
         semi: true,
+        quotes: "double",
         braceStyle: "1tbs",
         commaDangle: "never"
       })
@@ -185,6 +184,7 @@ export default tsEslint.config(
         "error",
         "always"
       ],
+      "@stylistic/function-call-spacing": "error",
       "@stylistic/line-comment-position": "error",
       "@stylistic/lines-around-comment": "error",
       "@stylistic/multiline-comment-style": "error",
@@ -219,8 +219,8 @@ export default tsEslint.config(
       }
     },
     extends: [
-      ...tsEslint.configs.strictTypeChecked,
-      ...tsEslint.configs.stylisticTypeChecked
+      ts.configs.strictTypeChecked,
+      ts.configs.stylisticTypeChecked
     ],
     rules: {
       "class-methods-use-this": "off",
@@ -253,15 +253,18 @@ export default tsEslint.config(
       "@typescript-eslint/no-shadow": "error",
       "@typescript-eslint/no-unnecessary-parameter-property-assignment": "error",
       "@typescript-eslint/no-unnecessary-qualifier": "error",
+      "@typescript-eslint/no-unnecessary-type-conversion": "error",
       "no-use-before-define": "off",
       "@typescript-eslint/no-use-before-define": "error",
       "@typescript-eslint/no-useless-empty-export": "error",
+      "@typescript-eslint/no-unsafe-type-assertion": "error",
       "prefer-destructuring": "off",
       "@typescript-eslint/prefer-destructuring": "error",
       "@typescript-eslint/prefer-enum-initializers": "error",
       "@typescript-eslint/prefer-readonly": "error",
       "@typescript-eslint/promise-function-async": "error",
       "@typescript-eslint/require-array-sort-compare": "error",
+      "@typescript-eslint/strict-boolean-expressions": "error",
       "@typescript-eslint/switch-exhaustiveness-check": "error"
     }
   }

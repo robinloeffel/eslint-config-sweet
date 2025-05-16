@@ -1,5 +1,18 @@
 # changelog
 
+## v26.0.0
+
+_2025-05-16_
+
+- update `@eslint/js`
+- upgrade `eslint-plugin-unicorn`
+- update `typescript-eslint`
+- clean up deprecated config options
+- add rule `@stylistic/func-call-spacing`
+- add rule `@typescript-eslint/no-unnecessary-type-conversion`
+- add rule `@typescript-eslint/no-unsafe-type-assertion`
+- add rule `@typescript-eslint/strict-boolean-expressions`
+
 ## v25.0.0
 
 _2025-03-21_

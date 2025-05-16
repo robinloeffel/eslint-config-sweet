@@ -1,3 +1,3 @@
-import type { config } from "typescript-eslint";
-declare const sweet: ReturnType<typeof config>;
+import type { ConfigArray } from "typescript-eslint";
+declare const sweet: ConfigArray;
 export default sweet;
