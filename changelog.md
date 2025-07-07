@@ -1,5 +1,15 @@
 # changelog
 
+## v27.0.0
+
+_2025-07-07_
+
+- upgrade `@stylistic/eslint-plugin`
+- add rule `@stylistic/semi-style`
+- add rule `@stylistic/switch-colon-spacing`
+- add rule `sonarjs/no-collapsible-if`
+- add rule `sonarjs/prefer-immediate-return`
+
 ## v26.0.0
 
 _2025-05-16_

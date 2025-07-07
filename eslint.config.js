@@ -191,6 +191,8 @@ export default ts.config(
       "@stylistic/newline-per-chained-call": "error",
       "@stylistic/no-confusing-arrow": "error",
       "@stylistic/no-extra-semi": "error",
+      "@stylistic/semi-style": "error",
+      "@stylistic/switch-colon-spacing": "error",
 
       // unicorn
       "unicorn/better-regex": "error",
@@ -199,6 +201,8 @@ export default ts.config(
       "unicorn/no-null": "off",
 
       // sonarjs
+      "sonarjs/no-collapsible-if": "error",
+      "sonarjs/prefer-immediate-return": "error",
       "sonarjs/shorthand-property-grouping": "error"
     }
   },
