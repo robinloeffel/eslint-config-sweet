@@ -1,5 +1,10 @@
 # changelog
 
+## v28.0.0
+
+- upgrade `eslint-plugin-unicorn`
+- remove rule `@typescript-eslint/strict-boolean-expressions`
+
 ## v27.0.0
 
 _2025-07-07_
