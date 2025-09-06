@@ -3,9 +3,10 @@ import stylistic from "@stylistic/eslint-plugin";
 import github from "eslint-plugin-github";
 import sonarjs from "eslint-plugin-sonarjs";
 import unicorn from "eslint-plugin-unicorn";
+import { defineConfig } from "eslint/config";
 import ts from "typescript-eslint";
 
-export default ts.config(
+export default defineConfig(
   {
     name: "global ignores",
     ignores: [

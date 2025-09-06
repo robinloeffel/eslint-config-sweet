@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sweet",
-  "version": "28.0.0",
+  "version": "29.0.0",
   "description": "ESLint shareable config for the most sweet-ass JavaScript and TypeScript. 🤙🏼",
   "keywords": [
     "eslint",
@@ -29,21 +29,21 @@
     "start": "vitest"
   },
   "dependencies": {
-    "@eslint/js": "^9.31.0",
-    "@stylistic/eslint-plugin": "^5.2.1",
+    "@eslint/js": "^9.35.0",
+    "@stylistic/eslint-plugin": "^5.3.1",
     "eslint-plugin-github": "^6.0.0",
-    "eslint-plugin-sonarjs": "^3.0.4",
-    "eslint-plugin-unicorn": "^60.0.0",
-    "typescript-eslint": "^8.37.0"
+    "eslint-plugin-sonarjs": "^3.0.5",
+    "eslint-plugin-unicorn": "^61.0.0",
+    "typescript-eslint": "^8.42.0"
   },
   "devDependencies": {
-    "eslint": "^9.31.0",
+    "eslint": "^9.35.0",
     "robins-tsconfig": "^2.0.0",
-    "typescript": "^5.8.3",
+    "typescript": "^5.9.2",
     "vitest": "^3.2.4"
   },
   "peerDependencies": {
-    "eslint": "^9.20.0",
-    "typescript": "^5"
+    "eslint": "^9.35.0",
+    "typescript": "^5.9.2"
   }
 }

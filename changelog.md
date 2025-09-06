@@ -1,5 +1,11 @@
 # changelog
 
+## v29.0.0
+
+- use `defineConfig` instead of `config` for ts type of package
+  - <https://typescript-eslint.io/packages/typescript-eslint/#config-deprecated>
+- upgrade `eslint-plugin-unicorn`
+
 ## v28.0.0
 
 - upgrade `eslint-plugin-unicorn`
