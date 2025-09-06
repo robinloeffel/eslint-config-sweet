@@ -11,7 +11,7 @@
 ## Installation
 
 ```console
-npm i -D eslint-config-sweet eslint typescript
+npm install --save-dev eslint-config-sweet eslint typescript
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ npm i -D eslint-config-sweet eslint typescript
 To use the package, follow the ESLint docs about [integrating shareable configs](https://eslint.org/docs/latest/use/configure/configuration-files#using-a-shareable-configuration-package).
 
 ```js
-import { defineConfig } from "eslint";
+import { defineConfig } from "eslint/config";
 import sweet from "eslint-config-sweet";
 
 export default defineConfig(sweet);
