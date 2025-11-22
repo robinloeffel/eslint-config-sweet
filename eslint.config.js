@@ -50,6 +50,7 @@ export default defineConfig(
       "no-promise-executor-return": "error",
       "no-self-compare": "error",
       "no-template-curly-in-string": "error",
+      "no-unassigned-vars": "error",
       "no-unmodified-loop-condition": "error",
       "no-unreachable-loop": "error",
       "no-use-before-define": "error",

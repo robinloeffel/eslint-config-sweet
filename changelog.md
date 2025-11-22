@@ -1,5 +1,10 @@
 # changelog
 
+## v30.0.0
+
+- upgrade `eslint-plugin-unicorn`
+- add rule `no-unassigned-vars`
+
 ## v29.0.0
 
 - use `defineConfig` instead of `config` for ts type of package
